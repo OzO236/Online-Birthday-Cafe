@@ -1,0 +1,158 @@
+.total_detaillke {
+  position: relative;
+  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  width: 375px;
+  height: 812px;
+}
+
+.container_detaillke {
+
+  background-image: url(../asset/DetailLike_bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 865px;
+}
+
+.title {
+  font-family: 'Anthony';
+  position: absolute;
+  top: 56px;
+  left: 52px;
+  font-size: 24px;
+}
+
+.p1 {
+  font-family: 'Noto Sans KR-Regular';
+  position: absolute;
+  top: 134px;
+  left: 60px;
+  font-size: 10px;
+}
+
+.p2{
+  font-family: 'Noto Sans KR-Regular';
+  position: absolute;
+  top: 155px;
+  left: 60px;
+  font-size: 7px;
+}
+
+.box {
+  font-family: 'Raleway_Dots';
+  position: absolute;
+  width: 120px;
+  height: 145px;
+  border: 1px solid;
+  border-color: #959691;
+  display: flex;
+  justify-content: center;
+}
+
+.box1 {
+  left: 59px;
+  top: 185px;
+}
+
+.box1 span {
+  position: absolute;
+  font-size: 12px;
+  top:10px
+}
+
+.box1 .sirenimg {
+  position: absolute;
+  top: 30px;
+  width: 63px;
+  height: 93px;
+}
+
+.box2 {
+  left: 197px;
+  top: 185px;
+}
+
+.box2 span {
+  position: absolute;
+  font-size: 12px;
+  top:10px
+}
+
+.box2 .memoriesimg {
+  position: absolute;
+  top: 20px;
+  width: 90px;
+  height: 120px;
+}
+
+.box3 {
+  left: 59px;
+  top: 363px;
+}
+
+.box3 span {
+  position: absolute;
+  font-size: 12px;
+  top:10px
+}
+
+.box3 .getaguitarimg {
+  position: absolute;
+  top: 27px;
+  width: 49px;
+  height: 114px;
+}
+
+.box4 {
+  left: 197px;
+  top: 363px;
+}
+
+.box4 span {
+  position: absolute;
+  font-size: 12px;
+  top:10px
+}
+
+.box4 .talksaxyimg {
+  position: absolute;
+  top: 27px;
+  width: 79px;
+  height: 119px;
+}
+.box5 {
+  left: 59px;
+  top: 540px;
+}
+
+.box5 span {
+  position: absolute;
+  font-size: 12px;
+  top:10px
+}
+
+.box5 .love119img {
+  position: absolute;
+  top: 27px;
+  width: 41px;
+  height: 112px;
+}
+.box6 {
+  left: 197px;
+  top: 540px;
+}
+
+// .box6 span {
+//   position: absolute;
+//   font-size: 12px;
+//   top:10px
+// }
+
+.box6 .staricon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80px;
+  height: auto;
+}

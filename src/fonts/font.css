@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Anthony';
+  src: url('./Anthony.otf') format('opentype'),
+      url('./Anthony.woff') format('woff'),
+      url('./Anthony.woff2') format('woff2'),
+      url('./Anthony.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Raleway_Dots';
+  src: url('./RalewayDots-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR-Regular';
+  src: url('./NotoSansKR-Regular.ttf') format('truetype');
+}
