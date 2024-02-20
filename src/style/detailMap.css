@@ -1,0 +1,99 @@
+.total_detailmap {
+  background: -webkit-gradient(linear, left top, left bottom, from(#507ddd), to(#d5dff2));
+  background: linear-gradient(180deg, #507ddd 0%, #d5dff2 100%);
+  background-color: white;
+  width: 375px;
+  height: 812px;
+}
+
+.container_detailmap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  background-image: url(../asset/detailmap_bg.png);
+  background-repeat: no-repeat;
+  top: 29px;
+  height: 763px;
+}
+
+.title_detailmap {
+  font-family: 'Anthony';
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 86px;
+}
+
+.rectangle {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 7px;
+  height: 395px;
+  width: 230px;
+  left: 73px;
+  top: 174px;
+}
+
+.textcontainer {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 7px;
+  height: 51px;
+  width: 230px;
+  top: 605px;
+  left: 73px;
+}
+
+.flexcontainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 4px;
+  top: 5px;
+  left: 10px;
+}
+
+.barcode {
+  position: absolute;
+  width: 212px;
+  height: 22px;
+  top: 670px;
+  left: 81px;
+}
+
+.star {
+  position: absolute;
+  font-size: 7px;
+  left: 76px;
+}
+
+.star1 {
+  top: 71px;
+}
+
+.star2 {
+  top: 151px;
+}
+
+.star3 {
+  top: 582px;
+}
+
+.text {
+  font-family: 'Noto Sans KR-Regular';
+  font-size: 7px;
+}
+/*# sourceMappingURL=DetailMap.css.map */

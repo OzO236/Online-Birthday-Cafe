@@ -12,7 +12,7 @@ function DetailLike() {
     <div>
       <div className='total_detaillke'>
         <div className="container_detaillke">
-          <div className="title">Which Wonbin do you like <br/> the most?</div>
+          <div className="title_detaillke">Which Wonbin do you like <br/> the most?</div>
           <div className='p1'><p>최애 원빈이의 컨셉 하나를 선택해주세요.</p></div>
           <div className='p2'><p>※하나만 선택 가능하며 한 번 누르면 다시 되돌릴 수 없습니다.</p></div>
 
