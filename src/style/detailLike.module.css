@@ -1,4 +1,4 @@
-.total_detaillke {
+.total {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#507ddd), to(#d5dff2));
   background: linear-gradient(180deg, #507ddd 0%, #d5dff2 100%);
@@ -7,14 +7,14 @@
   height: 812px;
 }
 
-.container_detaillke {
+.container {
   background-image: url(../asset/DetailLike_bg.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 865px;
 }
 
-.title_detaillke {
+.title {
   font-family: 'Anthony';
   position: absolute;
   top: 56px;
@@ -156,4 +156,4 @@
   width: 80px;
   height: auto;
 }
-/*# sourceMappingURL=detailLike.css.map */
+/*# sourceMappingURL=detailLike.module.css.map */
