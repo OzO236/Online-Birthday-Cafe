@@ -54,9 +54,14 @@
 }
 
 .overlayBox {
-  opacity: 0.5;
-  background: #d5dff2 100%;
-  font-family: 'Noto Sans KR-Regular';
+  opacity: 0.4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#507ddd), to(#d5dff2));
+  background: linear-gradient(180deg, #507ddd 0%, #d5dff2 100%);
+  border: 1px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #959691;
+  font-family: 'Anthony';
   font-size: 20px;
   width: 120px;
   display: -webkit-box;
