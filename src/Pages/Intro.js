@@ -1,58 +1,57 @@
 import React from 'react';
 import '../style/intro.css';
+import Profile from '../asset/intro_profile_img.svg';
+import ChatOne from '../asset/chat1_background.svg';
+import ChatTwo from '../asset/chat2_background.svg';
+import ChatThree from '../asset/chat3_background.svg';
+import ChatFour from '../asset/chat4_background.svg';
+import ChatFive from '../asset/chat5_background.svg';
+import Member from '../asset/group_member.svg';
 
 function Intro() {
   return(
     <div className='total'>
-      <div className="img-wb"></div>
-      <div className="container">
-        <div className="nav-top">
-          <div className="title"></div>
-          <div className="close"></div>
+      <div className='frame'>
+        <div className="img-wb"></div>
+        <div className="container">
+          <div className="nav-top">
+            <div className="title">삔사모♥♡</div>
+            <div className="close">X</div>
+          </div>
+          <div className="nav-bottom">
+            <div className="prev">←</div>
+            <div className="next">→</div>
+          </div>
+          <div className="chat">
+            <div className="chat-box1">
+              <img src={ChatOne} alt="ChatOne" />
+            </div>
+            <div className="chat-box2">
+            <img src={ChatTwo} alt="ChatTwo" />
+            </div>
+            <div className="chat-box3">
+            <img src={ChatThree} alt="ChatThree" />
+            </div>
+            <div className="chat-box4">
+            <img src={ChatFour} alt="ChatFour" />
+            </div>
+            <div className="chat-box5">
+            <img src={ChatFive} alt="ChatFive" />
+            </div>
+            <div className="img-riize">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <div className="profile">
+            <img src={Profile} alt="np profile img" />
+          </div>
+          <div className="member">
+            <div className="img-member">
+              <img src={Member} alt="Member" />
+            </div>
+          </div>
+          <div className="btn">GO</div>
         </div>
-        <div className="nav-bottom">
-          <div className="prev"></div>
-          <div className="next"></div>
-        </div>
-        <div className="chat">
-          <div className="chat-box1">
-            <img className='propfile-small' src="" alt="" />
-            <img className='chat-backgound' src="" alt="" />
-            <p>희쥬들 삐니 생일 파티 가요?</p>
-          </div>
-          <div className="chat-box2">
-            <img className='propfile-small' src="" alt="" />
-            <img className='chat-backgound' src="" alt="" />
-            <p>네! 가요~</p>
-          </div>
-          <div className="chat-box3">
-            <img className='propfile-small' src="" alt="" />
-            <img className='chat-backgound' src="" alt="" />
-            <p>가죠가죠!</p>
-          </div>
-          <div className="chat-box4">
-            <img className='propfile-small' src="" alt="" />
-            <img className='chat-backgound' src="" alt="" />
-            <p>삐니한테 키링 선물 주는 거 어때요?</p>
-          </div>
-          <div className="chat-box5">
-            <img className='propfile-small' src="" alt="" />
-            <img className='chat-backgound' src="" alt="" />
-            <p>좋아요~!!</p>
-          </div>
-          <div className="img-riize">
-            <img src="" alt="" />
-          </div>
-        </div>
-        <div className="profile">
-          <img src="src/asset/intro_profile_img.png" alt="" />
-        </div>
-        <div className="member">
-          <div className="img-member">
-            <img src="" alt="" />
-          </div>
-        </div>
-        <div className="btn">GO</div>
       </div>
     </div>
   )

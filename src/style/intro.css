@@ -1,1 +1,208 @@
-/*# sourceMappingURL=intro.css.map */
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+.total {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  box-sizing: border-box;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.total .frame {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  background: radial-gradient(50% 50% at 50% 50%, rgb(80, 125, 221) 0%, rgb(231, 237, 245) 100%);
+  position: relative;
+}
+.total .frame .container {
+  position: absolute;
+  width: 303px;
+  height: 437px;
+  top: 187px;
+  left: 36px;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: #020101;
+  background: linear-gradient(180deg, rgb(231, 237, 245) 0%, rgb(226, 224, 225) 50.4%, rgb(231, 237, 245) 100%);
+}
+.total .frame .container .nav-top {
+  position: absolute;
+  width: 303px;
+  height: 40px;
+  top: 0;
+  left: -1px;
+  border-radius: 30px 30px 0px 0px;
+  border: 1px solid;
+  border-color: #020101;
+  background: linear-gradient(180deg, rgb(226, 224, 225) 0%, rgb(231, 237, 245) 100%);
+}
+.total .frame .container .nav-top .title {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  top: 10px;
+  left: 16px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: #020101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8px;
+}
+.total .frame .container .nav-top .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 266px;
+  background-color: #e7edf5;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: #020101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total .frame .container .nav-bottom {
+  position: absolute;
+  width: 303px;
+  height: 40px;
+  top: 397px;
+  left: -1px;
+  border-radius: 0px 0px 30px 30px;
+  border: 1px solid;
+  border-color: #020101;
+  background: linear-gradient(180deg, rgb(231, 237, 245) 0%, rgb(226, 224, 225) 100%);
+}
+.total .frame .container .nav-bottom .prev {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 16px;
+  background-color: #e7edf5;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: #020101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total .frame .container .nav-bottom .next {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 266px;
+  background-color: #e7edf5;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: #020101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total .frame .container .chat {
+  position: absolute;
+  width: 195px;
+  height: 335px;
+  top: 51px;
+  left: 10px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #020101;
+}
+.total .frame .container .chat .chat-box1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+}
+.total .frame .container .chat .chat-box2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 55px;
+  left: 2px;
+}
+.total .frame .container .chat .chat-box3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100px;
+  left: 125px;
+}
+.total .frame .container .chat .chat-box4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 145px;
+  left: 2px;
+}
+.total .frame .container .chat .chat-box5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 185px;
+  left: 2px;
+}
+.total .frame .container .profile {
+  width: 80px;
+  height: 130px;
+  position: absolute;
+  top: 52px;
+  left: 213px;
+  border: 2px solid #020101;
+  border-radius: 50px;
+}
+.total .frame .container .member {
+  width: 80px;
+  height: 158px;
+  position: absolute;
+  top: 193px;
+  left: 213px;
+  border: 1px solid #020101;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.total .frame .container .member .img-member {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.total .frame .container .btn {
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  top: 361px;
+  left: 213px;
+  border: 1px solid #020101;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgb(226, 224, 225) 0%, rgb(231, 237, 245) 100%);
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=intro.css.map */
