@@ -1,14 +1,19 @@
 .total {
-  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
-  background-color: rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left top, left bottom, from(#507ddd), to(#d5dff2));
+  background: linear-gradient(180deg, #507ddd 0%, #d5dff2 100%);
+  background-color: white;
   width: 375px;
   height: 812px;
 }
 
 .container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-content: center;
   background-image: url(../asset/detailmap_bg.png);
   background-repeat: no-repeat;
@@ -17,7 +22,7 @@
 }
 
 .title {
-  font-family: "Anthony";
+  font-family: 'Anthony';
   text-align: center;
   font-size: 24px;
   position: absolute;
@@ -46,9 +51,16 @@
 
 .flexcontainer {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 4px;
   top: 5px;
   left: 10px;
@@ -81,6 +93,7 @@
 }
 
 .text {
-  font-family: "Noto Sans KR-Regular";
+  font-family: 'Noto Sans KR-Regular';
   font-size: 7px;
-}/*# sourceMappingURL=detailMap.module.css.map */
+}
+/*# sourceMappingURL=detailMap.module.css.map */
