@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Hardworking_donghee';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_06@1.0/Hardworking_donghee.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kyuri_diary';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_07@1.0/Kyuri_diary.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+
+  .frame{
+    background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .paper{
+      position: relative;
+      width: 614px;
+      height: 865px;
+      top: 43px;
+      left: 31px;
+      background-image: url('../asset/paper.svg');
+
+      // 공통 부분 (toText, toName)
+      .toText{
+        font-family: 'Anthony', Helvetica;
+        font-weight: 400;
+        color: #000;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      .toName{
+        font-family: 'Hardworking_donghee', Helvetica;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+        margin-left: 7px;
+        padding-top: 2px;
+      }
+
+      .to{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 29px;
+        left: 28px;
+      }
+
+      .msgBox{
+        position: absolute;
+        width: 280px;
+        height: 615px;
+        top: 80px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+      }
+
+      .from{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 709px;
+        left: 183px;
+      }
+    }
+  }
+}
+
+.rect{
+  position: relative;
+  width: 265px;
+  height: 45px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: 1px 2px 4px #00000040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  .txt{
+    font-family: 'Hardworking_donghee', Helvetica;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    line-height: normal;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+}
+
+// Modal style
+.modalBox{
+  width: 265px;
+  height: 395px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(180deg, rgb(213, 223, 242) 0%, rgb(226, 224, 225) 50.5%, rgb(213, 223, 242) 100%);
+    border: 1px solid #000;
+    border-radius: 30px;
+    box-shadow: 1px 2px 4px #00000040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .closeBoxBox{
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 7px;
+      
+      .closeBox{
+        // position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+        border-radius: 30px;
+        box-shadow: 1px 2px 4px #00000040;
+        background: linear-gradient(180deg, rgb(213, 223, 242) 0%, rgb(231, 237, 245) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+      }
+  
+        p{
+          color: #000;
+          font-family: 'Anthony', Helvetica;
+          font-weight: 400;
+          font-size: .7rem;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+    }
+
+    .boxBox{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title{
+        // position: absolute;
+        width: 226px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        p{
+          color: #000;
+          font-family: 'Kyuri_diary', Helvetica;
+          font-weight: 700;
+          font-size: 1.1rem;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+      }
+  
+      .txtBox{
+        position: relative;
+        width: 235px;
+        height: 260px;
+        // top: 48px;
+        // left: 15px;
+        background-color: #e7edf5;
+        border: 1px solid #000;
+        border-radius: 30px;
+        box-shadow: 1px 2px 4px #00000040;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .txt{
+          position: absolute;
+          top: 10;
+          left: 0;
+          width: 100%;
+          height: calc(100% - 10px);
+          color: #959691;
+          font-family: 'Kyuri_diary', Helvetica;
+          font-weight: 400;
+          font-size: 1rem;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          caret-color: #000;
+          box-sizing: border-box;
+          white-space: wrap;
+        }
+      }
+    }
+
+    .submitBoxBox{
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .submitBox{
+        // position: absolute;
+        width: 142px;
+        height: 31px;
+        // top: 352px;
+        // left: 107px;
+        border: 1px solid #000;
+        border-radius: 30px;
+        box-shadow: 1px 2px 4px #00000040;
+        background: linear-gradient(180deg, rgb(213, 223, 242) 0%, rgb(231, 237, 245) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+  
+        p{
+          color: #000;
+          font-family: 'Anthony', Helvetica;
+          font-weight: 400;
+          font-size: 1rem;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
