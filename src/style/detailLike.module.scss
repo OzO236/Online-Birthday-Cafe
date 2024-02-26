@@ -55,13 +55,14 @@
   border: 1px solid;
   box-sizing: border-box;
   border-color: #959691;
+  width: 120px;
   font-family: 'Anthony';
   font-size: 20px;
-  width: 120px;
   // height: 50px; //동적으로 전달
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #000;
 }
 
 

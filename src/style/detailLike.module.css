@@ -61,9 +61,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-color: #959691;
+  width: 120px;
   font-family: 'Anthony';
   font-size: 20px;
-  width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +73,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #000;
 }
 
 .box1 {
