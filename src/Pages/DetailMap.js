@@ -1,8 +1,8 @@
 import React from 'react'
 import { Map, MarkerClusterer, CustomOverlayMap } from 'react-kakao-maps-sdk';
-
 import styles from '../style/detailMap.module.css'
 import riizebarcode from '../asset/riizebarcode.png'
+import bgImg from '../asset/detailmap_bg.svg';
 
 function DetailMap() {
     
@@ -30,6 +30,9 @@ function DetailMap() {
     <div>
       <div className={styles.total}>
         <div className={styles.container}> 
+          <div className={styles.bgImg}>
+            <img src={bgImg} alt="no bgImg" />
+          </div>
           <span className={`${styles.star} ${styles.star1}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>        
           <div className={styles.title}>Wonbin's birthday <br/> cafe map </div>
           <span className={`${styles.star} ${styles.star2}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>

@@ -3,44 +3,62 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 10px;
   font-family: "DotGothic16", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   letter-spacing: 0;
   line-height: normal;
 }
+
 .total .frame {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  background: radial-gradient(50% 50% at 50% 50%, rgb(80, 125, 221) 0%, rgb(231, 237, 245) 100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  background: radial-gradient(50% 50% at 50% 50%, #507ddd 0%, #e7edf5 100%);
   position: relative;
 }
+
 .total .frame .imgWb {
   width: 70px;
-  height: 70px;
+  height: 74px;
   position: absolute;
-  top: 123.6px;
-  left: 171px;
-  object-fit: cover;
+  top: 116.3px;
+  left: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
 }
+
 .total .frame .imgWb img {
   width: 100%;
   height: 100%;
 }
+
 .total .frame .container {
   position: absolute;
   width: 303px;
@@ -50,8 +68,10 @@
   border-radius: 30px;
   border: 1px solid;
   border-color: #020101;
-  background: linear-gradient(180deg, rgb(231, 237, 245) 0%, rgb(226, 224, 225) 50.4%, rgb(231, 237, 245) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7edf5), color-stop(50.4%, #e2e0e1), to(#e7edf5));
+  background: linear-gradient(180deg, #e7edf5 0%, #e2e0e1 50.4%, #e7edf5 100%);
 }
+
 .total .frame .container .navTop {
   position: absolute;
   width: 303px;
@@ -61,8 +81,10 @@
   border-radius: 30px 30px 0px 0px;
   border: 1px solid;
   border-color: #020101;
-  background: linear-gradient(180deg, rgb(226, 224, 225) 0%, rgb(231, 237, 245) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e2e0e1), to(#e7edf5));
+  background: linear-gradient(180deg, #e2e0e1 0%, #e7edf5 100%);
 }
+
 .total .frame .container .navTop .title {
   position: absolute;
   width: 80px;
@@ -73,11 +95,18 @@
   border-radius: 30px;
   border: 1px solid;
   border-color: #020101;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 8px;
 }
+
 .total .frame .container .navTop .close {
   position: absolute;
   width: 20px;
@@ -88,10 +117,17 @@
   border-radius: 30px;
   border: 1px solid;
   border-color: #020101;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .total .frame .container .navBottom {
   position: absolute;
   width: 303px;
@@ -101,8 +137,10 @@
   border-radius: 0px 0px 30px 30px;
   border: 1px solid;
   border-color: #020101;
-  background: linear-gradient(180deg, rgb(231, 237, 245) 0%, rgb(226, 224, 225) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7edf5), to(#e2e0e1));
+  background: linear-gradient(180deg, #e7edf5 0%, #e2e0e1 100%);
 }
+
 .total .frame .container .navBottom .prev {
   position: absolute;
   width: 20px;
@@ -113,10 +151,17 @@
   border-radius: 30px;
   border: 1px solid;
   border-color: #020101;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .total .frame .container .navBottom .next {
   position: absolute;
   width: 20px;
@@ -127,10 +172,17 @@
   border-radius: 30px;
   border: 1px solid;
   border-color: #020101;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .total .frame .container .chat {
   position: absolute;
   width: 195px;
@@ -142,69 +194,78 @@
   border: 1px solid;
   border-color: #020101;
 }
+
 .total .frame .container .chat .chatBox1 {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 10px;
   left: 2px;
   opacity: 0;
-  animation: fadeInOut 1s ease forwards;
-  animation-delay: 0.5s;
+  -webkit-animation: fadeInOut 1s ease forwards;
+          animation: fadeInOut 1s ease forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
+
 .total .frame .container .chat .chatBox2 {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 55px;
   left: 2px;
   opacity: 0;
-  animation: fadeInOut 1s ease forwards;
-  animation-delay: 2s;
+  -webkit-animation: fadeInOut 1s ease forwards;
+          animation: fadeInOut 1s ease forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
+
 .total .frame .container .chat .chatBox3 {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 100px;
   left: 125px;
   opacity: 0;
-  animation: fadeInOut 1s ease forwards;
-  animation-delay: 3.5s;
+  -webkit-animation: fadeInOut 1s ease forwards;
+          animation: fadeInOut 1s ease forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
+
 .total .frame .container .chat .chatBox4 {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 145px;
   left: 2px;
   opacity: 0;
-  animation: fadeInOut 1s ease forwards;
-  animation-delay: 5s;
+  -webkit-animation: fadeInOut 1s ease forwards;
+          animation: fadeInOut 1s ease forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
+
 .total .frame .container .chat .chatBox5 {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 185px;
   left: 2px;
   opacity: 0;
-  animation: fadeInOut 1s ease forwards;
-  animation-delay: 6.5s;
+  -webkit-animation: fadeInOut 1s ease forwards;
+          animation: fadeInOut 1s ease forwards;
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
 }
+
 .total .frame .container .chat .imgRiize {
-  width: 189px;
-  height: 106px;
+  width: 190px;
+  height: 55px;
   position: absolute;
-  top: 254px;
+  top: 281px;
   left: 2px;
   z-index: 1;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .total .frame .container .chat .imgRiize img {
   width: 100%;
   height: 100%;
 }
+
 .total .frame .container .profile {
   width: 80px;
   height: 130px;
@@ -214,6 +275,7 @@
   border: 2px solid #020101;
   border-radius: 50px;
 }
+
 .total .frame .container .member {
   width: 80px;
   height: 158px;
@@ -225,14 +287,22 @@
   background-color: #ffffff;
   overflow: hidden;
 }
+
 .total .frame .container .member .imgMember {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 5px;
 }
+
 .total .frame .container .btn {
   position: absolute;
   width: 80px;
@@ -241,11 +311,27 @@
   left: 213px;
   border: 1px solid #020101;
   border-radius: 30px;
-  background: linear-gradient(180deg, rgb(226, 224, 225) 0%, rgb(231, 237, 245) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e2e0e1), to(#e7edf5));
+  background: linear-gradient(180deg, #e2e0e1 0%, #e7edf5 100%);
   font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInOut {
@@ -255,4 +341,5 @@
   to {
     opacity: 1;
   }
-}/*# sourceMappingURL=intro.module.css.map */
+}
+/*# sourceMappingURL=intro.module.css.map */
