@@ -1,10 +1,19 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from '../style/detailKiring.module.css';
+import ExplainImg from '../asset/explainpaper.svg';
 
 function DetailKiring() {
-  return(
-    <div>DetailKiring임<Outlet></Outlet></div>
+  let navigate = useNavigate();
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.frame}>
+        <img className={styles.ExplainImg} src={ExplainImg} alt="no ExplainImg" />
+        <div className={styles.btn} onClick={() => { navigate('/making') }}></div>
+      </div>
+    </div>
   )
 };
 
-export default DetailKiring
+export default DetailKiring;

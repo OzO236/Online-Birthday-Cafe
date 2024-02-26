@@ -58,7 +58,7 @@ function Intro() {
               <img src={Member} alt="Member" />
             </div>
           </div>
-          <div className={styles.btn} onClick={()=>{navigate('/Product')}}>GO</div>
+          <div className={styles.btn} onClick={()=>{navigate('/product')}}>GO</div>
         </div>
       </div>
     </div>

@@ -65,9 +65,9 @@
   left: 28px;
 }
 .container .frame .paper .msgBox {
-  position: absolute;
+  position: relative;
   width: 280px;
-  height: 615px;
+  max-height: 615px;
   top: 80px;
   left: 20px;
   display: flex;
@@ -82,7 +82,7 @@
   flex-direction: row;
   position: absolute;
   top: 709px;
-  left: 183px;
+  left: 210px;
 }
 
 .rect {
@@ -110,8 +110,12 @@
 }
 
 .modalBox {
-  width: 265px;
-  height: 395px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  width: 300px;
+  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +152,7 @@
   justify-content: center;
   align-items: center;
   margin: 1px;
+  margin-top: -20px;
 }
 .modalBox .box .closeBoxBox p {
   color: #000;
@@ -171,7 +176,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 .modalBox .box .boxBox .title p {
   color: #000;
@@ -185,8 +191,8 @@
 }
 .modalBox .box .boxBox .txtBox {
   position: relative;
-  width: 235px;
-  height: 260px;
+  width: 270px;
+  height: 150px;
   background-color: #e7edf5;
   border: 1px solid #000;
   border-radius: 30px;
@@ -198,11 +204,11 @@
 }
 .modalBox .box .boxBox .txtBox .txt {
   position: absolute;
-  top: 10;
+  top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 10px);
-  color: #959691;
+  height: calc(100% - 20px);
+  color: #000;
   font-family: "Kyuri_diary", Helvetica;
   font-weight: 400;
   font-size: 1rem;
@@ -216,6 +222,9 @@
   caret-color: #000;
   box-sizing: border-box;
   white-space: wrap;
+}
+.modalBox .box .boxBox .txtBox .txt::placeholder {
+  color: #959691;
 }
 .modalBox .box .submitBoxBox {
   width: 90%;

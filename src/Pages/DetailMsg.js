@@ -1,7 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../style/detailMsg.module.css';
+import Modal from './Modal';
 
 function DetailMsg() {
+
+  let [messages, setMessages] = useState([]);
+  let [showModal, setShowModal] = useState(false);
+
+  // LocalStorage에서 데이터 가져오기
+  useEffect(()=>{
+    const storedMessages = JSON.parse(localStorage.getItem('messages')) || [];
+    setMessages(storedMessages);
+  }, []);
+
+  // 새로운 메시지를 추가
+  const addMessage = (newMessage) => {
+    let updatedMessages = [...messages, newMessage];
+    setMessages(updatedMessages);
+    localStorage.setItem('messages', JSON.stringify(updatedMessages));
+  };
+
   return(
     <div className={styles.container}>
       <div className={styles.frame}>
@@ -13,7 +31,7 @@ function DetailMsg() {
           </div>
   
           <div className={styles.msgBox}>
-            <Box />
+            <Box messages={messages} addMessage={addMessage} setShowModal={setShowModal} />
           </div>
   
           <div className={styles.from}>
@@ -23,47 +41,27 @@ function DetailMsg() {
   
         </div>
       </div>
+      {/* showModal이 true이면 <Modal />을 렌더링합니다.
+        showModal이 false이면 <Modal />을 렌더링하지 않습니다. */}
+      {showModal && <Modal addMessage={addMessage} onClose={() => setShowModal(false)} />}
     </div>
   )
 };
 
-function Box() {
+function Box({ messages, setShowModal }) {
 
-  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <div className={styles.rect}>
-        <div className={styles.txt}>원빈아 생일 축하해 아프지말고 우리 오래보자악</div>
-      </div><div className={styles.rect}>
-        <div className={styles.txt}>원빈아 생일 축하해 아프지말고 우리 오래보자악</div>
-      </div>
+      {messages.map((message, index) => (
+        <div key={index} className={styles.rect}>
+          <div className={styles.txt}>{message}</div>
+        </div>
+      ))}
       <div className={styles.rect} onClick={()=>setShowModal(true)}>
         <div className={styles.txt}>+</div>
       </div>
-      {/* showModal이 true이면 <Modal />을 렌더링합니다.
-        showModal이 false이면 <Modal />을 렌더링하지 않습니다. */}
-      {showModal && <Modal show={showModal} onHide={() => setShowModal(false)} />}
     </>
-  )
-}
-
-function Modal({show,onHide}) {
-  return (
-    <div style={{ display: {show} ? "block" : "none"}}>
-      <div className={styles.modalBox}>
-        <div className={styles.box}>
-          <div className={styles.closeBoxBox} onClick={onHide}><div className={styles.closeBox}><p>X</p></div></div>
-          <div className={styles.boxBox}>
-            <div className={styles.title}><p>원빈이에게 하고 싶은 말을 써주세요!</p></div>
-            <div className={styles.txtBox}>
-              <input className={styles.txt} type="text" placeholder='최대 25자까지만 입력 가능합니다. (공백 포함)' />
-            </div>
-          </div>
-          <div className={styles.submitBoxBox}><div className={styles.submitBox}><p>SUBMIT</p></div></div>
-        </div>
-      </div>
-    </div>
   )
 }
 
