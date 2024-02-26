@@ -48,6 +48,20 @@
   justify-content: center;
 }
 
+.overlayBox {
+  opacity: 0.4;
+  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
+  border: 1px solid;
+  box-sizing: border-box;
+  border-color: #959691;
+  font-family: "Anthony";
+  font-size: 20px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .box1 {
   left: 59px;
   top: 185px;
