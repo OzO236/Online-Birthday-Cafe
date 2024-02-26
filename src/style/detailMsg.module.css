@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Hardworking_donghee";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_06@1.0/Hardworking_donghee.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kyuri_diary";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_07@1.0/Kyuri_diary.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+}
+.container .frame {
+  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container .frame .paper {
+  position: relative;
+  width: 614px;
+  height: 865px;
+  top: 43px;
+  left: 31px;
+  background-image: url("../asset/paper.svg");
+}
+.container .frame .paper .toText {
+  font-family: "Anthony", Helvetica;
+  font-weight: 400;
+  color: #000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.container .frame .paper .toName {
+  font-family: "Hardworking_donghee", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin-left: 7px;
+  padding-top: 2px;
+}
+.container .frame .paper .to {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 29px;
+  left: 28px;
+}
+.container .frame .paper .msgBox {
+  position: relative;
+  width: 280px;
+  max-height: 615px;
+  top: 80px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+}
+.container .frame .paper .from {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 709px;
+  left: 210px;
+}
+
+.rect {
+  position: relative;
+  width: 265px;
+  height: 45px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.rect .txt {
+  font-family: "Hardworking_donghee", Helvetica;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  line-height: normal;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+
+.modalBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  width: 300px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalBox .box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(180deg, rgb(213, 223, 242) 0%, rgb(226, 224, 225) 50.5%, rgb(213, 223, 242) 100%);
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modalBox .box .closeBoxBox {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 7px;
+}
+.modalBox .box .closeBoxBox .closeBox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2509803922);
+  background: linear-gradient(180deg, rgb(213, 223, 242) 0%, rgb(231, 237, 245) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  margin-top: -20px;
+}
+.modalBox .box .closeBoxBox p {
+  color: #000;
+  font-family: "Anthony", Helvetica;
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.modalBox .box .boxBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modalBox .box .boxBox .title {
+  width: 226px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.modalBox .box .boxBox .title p {
+  color: #000;
+  font-family: "Kyuri_diary", Helvetica;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.modalBox .box .boxBox .txtBox {
+  position: relative;
+  width: 270px;
+  height: 150px;
+  background-color: #e7edf5;
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2509803922);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalBox .box .boxBox .txtBox .txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 20px);
+  color: #000;
+  font-family: "Kyuri_diary", Helvetica;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  caret-color: #000;
+  box-sizing: border-box;
+  white-space: wrap;
+}
+.modalBox .box .boxBox .txtBox .txt::placeholder {
+  color: #959691;
+}
+.modalBox .box .submitBoxBox {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.modalBox .box .submitBoxBox .submitBox {
+  width: 142px;
+  height: 31px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2509803922);
+  background: linear-gradient(180deg, rgb(213, 223, 242) 0%, rgb(231, 237, 245) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.modalBox .box .submitBoxBox .submitBox p {
+  color: #000;
+  font-family: "Anthony", Helvetica;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}/*# sourceMappingURL=detailMsg.module.css.map */

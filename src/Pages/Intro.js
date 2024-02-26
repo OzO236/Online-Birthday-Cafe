@@ -7,12 +7,20 @@ import ChatThree from '../asset/chat3_background.svg';
 import ChatFour from '../asset/chat4_background.svg';
 import ChatFive from '../asset/chat5_background.svg';
 import Member from '../asset/group_member.svg';
+import Riize from '../asset/riize.png';
+import BinCat from '../asset/intro_wb2.png';
+import { useNavigate } from 'react-router-dom';
 
 function Intro() {
+
+  let navigate = useNavigate();
+
   return(
     <div className={styles.total}>
       <div className={styles.frame}>
-        <div className={styles.imgWb}></div>
+        <div className={styles.imgWb}>
+          <img src={BinCat} alt="no BinCar img" />
+        </div>
         <div className={styles.container}>
           <div className={styles.navTop}>
             <div className={styles.title}>삔사모♥♡</div>
@@ -39,7 +47,7 @@ function Intro() {
             <img src={ChatFive} alt="ChatFive" />
             </div>
             <div className={styles.imgRiize}>
-              <img src="" alt="" />
+              <img src={Riize} alt="no Riize img" />
             </div>
           </div>
           <div className={styles.profile}>
@@ -50,7 +58,7 @@ function Intro() {
               <img src={Member} alt="Member" />
             </div>
           </div>
-          <div className={styles.btn}>GO</div>
+          <div className={styles.btn} onClick={()=>{navigate('/product')}}>GO</div>
         </div>
       </div>
     </div>
