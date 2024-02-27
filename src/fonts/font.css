@@ -15,3 +15,8 @@
   font-family: 'Noto Sans KR-Regular';
   src: url('./NotoSansKR-Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Suite-Light';
+  src: url('./SUITE-Light.ttf') format('truetype');
+}

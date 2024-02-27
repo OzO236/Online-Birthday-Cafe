@@ -3,6 +3,7 @@ import { Map, MarkerClusterer, CustomOverlayMap } from 'react-kakao-maps-sdk';
 import styles from '../style/detailMap.module.css'
 import riizebarcode from '../asset/riizebarcode.png'
 import bgImg from '../asset/detailmap_bg.svg';
+import wbLocationImg from '../asset/wbLocationImg.png';
 
 function DetailMap() {
     
@@ -227,11 +228,11 @@ function DetailMap() {
                 key={index}
                 position={position.latlng}
               >
-                <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'-3px'}}>
-                  <div style={{border:'1px solid', backgroundColor:'#fff', borderRadius:'4px', padding: '0 5px', marginBottom:'3px', fontSize:'16px'}}>
-                    <span>{position.title}</span>
+                <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'-3px'}}>
+                  <div className={styles.speech}>
+                    <span style={{fontFamily: 'Suite-Light', fontSize: '10px', display: 'block', margin:'3px'}}>{position.title}</span>
                   </div>
-                <img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png" alt="이미지" style={{width: '20px', height:'auto'}}/>
+                <img src={wbLocationImg} alt="이미지" style={{width: '40px', height:'auto', marginTop:'3px'}}/>
                 </div>
               </CustomOverlayMap>
                 

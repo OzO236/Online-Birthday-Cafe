@@ -39,6 +39,28 @@
   left: 66px;
   top: 174px;
 }
+.speech {
+  position: relative;
+  font-family: 'Noto Sans KR-Regular';
+  padding: 0 2.5px;
+  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
+  background-color: rgba(255, 255, 255, 1);
+	border-radius: 4px;
+}
+.speech:after {
+  content: '';
+  position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-top-color: rgba(213, 223, 242, 1);
+	border-bottom: 0;
+	margin-left: -7px;
+	margin-bottom: -5px;
+  z-index: -1; /* speech의 뒤로 보내기 */
+}
 .textcontainer {
   position: absolute;
   border: 1px solid;

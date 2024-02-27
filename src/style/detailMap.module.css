@@ -1,6 +1,8 @@
+@charset "UTF-8";
 .total {
-  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
-  background-color: rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left top, left bottom, from(#507ddd), to(#d5dff2));
+  background: linear-gradient(180deg, #507ddd 0%, #d5dff2 100%);
+  background-color: white;
   width: 100vw;
   height: 100vh;
 }
@@ -9,9 +11,15 @@
   position: relative;
   top: 29px;
   height: 763px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bgImg {
@@ -20,13 +28,14 @@
   position: absolute;
   margin-top: 10px;
 }
+
 .bgImg img {
   width: 100%;
   height: 100%;
 }
 
 .title {
-  font-family: "Anthony";
+  font-family: 'Anthony';
   text-align: center;
   font-size: 24px;
   position: absolute;
@@ -43,6 +52,32 @@
   top: 174px;
 }
 
+.speech {
+  position: relative;
+  font-family: 'Noto Sans KR-Regular';
+  padding: 0 2.5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#507ddd), to(#d5dff2));
+  background: linear-gradient(180deg, #507ddd 0%, #d5dff2 100%);
+  background-color: white;
+  border-radius: 4px;
+}
+
+.speech:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: #d5dff2;
+  border-bottom: 0;
+  margin-left: -7px;
+  margin-bottom: -5px;
+  z-index: -1;
+  /* speech의 뒤로 보내기 */
+}
+
 .textcontainer {
   position: absolute;
   border: 1px solid;
@@ -55,9 +90,16 @@
 
 .flexcontainer {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 4px;
   top: 5px;
   left: 10px;
@@ -90,6 +132,7 @@
 }
 
 .text {
-  font-family: "Noto Sans KR-Regular";
+  font-family: 'Noto Sans KR-Regular';
   font-size: 7px;
-}/*# sourceMappingURL=detailMap.module.css.map */
+}
+/*# sourceMappingURL=detailMap.module.css.map */
