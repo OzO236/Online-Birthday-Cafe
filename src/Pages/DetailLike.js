@@ -10,10 +10,18 @@ import staricon from '../asset/staricon.png'
 function DetailLike() {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
   const [selectedRatio, setSelectedRatio] = useState([0,0,0,0,0,0]);
+  const [isBoxClicked, setIsBoxClicked] = useState(false); // 클릭 여부 상태값 추가
 
+  useEffect(() => {
+    // 페이지가 처음 로드될 때만 실행되도록 함
+    if (!localStorage.getItem('selected')) {
+      localStorage.setItem('selected', JSON.stringify([]));
+    }
+  }, []);
 
    // 클릭 이벤트 핸들러 함수
-   const handleBoxClick = (boxNumber) => {
+  const handleBoxClick = (boxNumber) => {
+    if (!isBoxClicked) {
     // 상자가 선택되었음을 표시
     setIsOverlayVisible(true);
 
@@ -31,6 +39,8 @@ function DetailLike() {
       updatedRatio[index] = Math.round((countOfBox / totalCount) * 100); // 해당 인덱스의 백분율을 계산하여 업데이트
     });
     setSelectedRatio(updatedRatio);
+    // 상자 클릭 여부 업데이트
+    setIsBoxClicked(true); }
   };
 
   //비동기 처리 확인용
