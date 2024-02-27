@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import styles from '../style/detailMsg.module.css';
 import Modal from './Modal';
 import homeBtnMsg from '../asset/homeBtnMsg.svg';
@@ -57,8 +57,6 @@ function DetailMsg() {
 };
 
 function Box({ messages, setShowModal }) {
-
-
   return (
     <>
       {messages.map((message, index) => (
