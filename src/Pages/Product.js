@@ -12,7 +12,7 @@ function Product() {
     <div className={styles.container}>
       <div className={styles.frame}>
         <div className={styles.notice}>인덱스 4개 중 1개를 선택해 주세요.</div>
-        <video className={styles.video} width="100%" height="auto" muted autoPlay forward>
+        <video className={styles.video} width="100%" height="auto" muted autoPlay>
           <source src={video} type="video/mp4" />
         </video>
         <div className={styles.riizeImg}>

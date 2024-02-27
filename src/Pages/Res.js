@@ -21,7 +21,7 @@ import g1p3_static from '../asset/g1p3_static.png';
 import g2p3_static from '../asset/g2p3_static.png';
 import g3p3_static from '../asset/g3p3_static.png';
 
-function Res({ selectedGuitar, selectedPeak }) {
+function Res({ selectedGuitar, selectedPeak, setShowVideo }) {
 
   const navigate = useNavigate();
 

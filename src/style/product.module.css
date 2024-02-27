@@ -32,8 +32,6 @@
 }
 .container .frame .video {
   position: absolute;
-  width: 360px;
-  height: 360px;
   top: 226px;
   left: 8px;
 }
