@@ -1,30 +1,18 @@
 .container {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
-
 .container .frame {
-  background: -webkit-gradient(linear, left top, left bottom, from(#507ddd), to(#d5dff2));
-  background: linear-gradient(180deg, #507ddd 0%, #d5dff2 100%);
+  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   width: 100vw;
   height: 100vh;
   position: relative;
 }
-
 .container .frame .ExplainImg {
   position: absolute;
   width: 351px;
@@ -32,12 +20,10 @@
   top: 159px;
   left: 12px;
 }
-
 .container .frame .ExplainImg img {
   width: 100%;
   height: 100%;
 }
-
 .container .frame .btn {
   position: absolute;
   width: 54px;
@@ -46,148 +32,85 @@
   left: 300px;
   z-index: 1;
 }
-
 .container .frame .flexBox {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
-
 .container .frame .flexBox .frameBox {
   width: 450px;
   height: auto;
 }
-
 .container .frame .flexBox .frameBox img {
   width: 100%;
   height: 100%;
 }
-
 .container .frame .flexBox .guitarGroup {
   width: 100px;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  flex-direction: row;
+  align-content: space-between;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .container .frame .flexBox .guitarGroup img {
   width: 100%;
   height: 100%;
   rotate: 40deg;
   margin: 3px;
 }
-
 .container .frame .flexBox .guitarGroup img:nth-child(1) {
-  -webkit-animation: ZoomInOut 2s ease-in-out;
-          animation: ZoomInOut 2s ease-in-out;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation: ZoomInOut 2s ease-in-out;
+  animation-delay: 2s;
 }
-
 .container .frame .flexBox .guitarGroup img:nth-child(2) {
-  -webkit-animation: ZoomInOut 2s ease-in-out;
-          animation: ZoomInOut 2s ease-in-out;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation: ZoomInOut 2s ease-in-out;
+  animation-delay: 4s;
 }
-
 .container .frame .flexBox .guitarGroup img:nth-child(3) {
-  -webkit-animation: ZoomInOut 2s ease-in-out;
-          animation: ZoomInOut 2s ease-in-out;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  animation: ZoomInOut 2s ease-in-out;
+  animation-delay: 6s;
 }
-
 .container .frame .flexBox .resBtn {
   width: 162px;
   height: 162px;
 }
-
 .container .frame .flexBox .resBtn img {
   width: 100%;
   height: 100%;
 }
-
 .container .ResFrame {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: radial-gradient(50% 50% at 50% 50%, #507ddd 0%, black 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: radial-gradient(50% 50% at 50% 50%, rgb(80, 125, 221) 0%, rgb(0, 0, 0) 100%);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .ResFrame .Resimg {
   width: 100vw;
   height: auto;
 }
-
 .container .ResFrame .Resimg img {
   width: 100%;
   height: 100%;
 }
 
-@-webkit-keyframes ZoomInOut {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @keyframes ZoomInOut {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    transform: scale(1.15);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
-}
-/*# sourceMappingURL=detailKiring.module.css.map */
+}/*# sourceMappingURL=detailKiring.module.css.map */

@@ -2,29 +2,21 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
-
 .container .frame {
   background: #000;
   width: 100vw;
   height: 100vh;
   position: relative;
 }
-
 .container .frame .notice {
-  font-family: 'Noto Sans KR-Regular';
+  font-family: "Noto Sans KR-Regular";
   font-weight: 400;
   font-size: 14px;
   color: #d5dff2;
@@ -35,12 +27,9 @@
   letter-spacing: 0;
   line-height: normal;
   opacity: 0;
-  -webkit-animation: fadeInOut .5s ease-in forwards;
-          animation: fadeInOut .5s ease-in forwards;
-  -webkit-animation-delay: 8.5s;
-          animation-delay: 8.5s;
+  animation: fadeInOut 0.5s ease-in forwards;
+  animation-delay: 8.5s;
 }
-
 .container .frame .video {
   position: absolute;
   width: 360px;
@@ -48,28 +37,22 @@
   top: 226px;
   left: 8px;
 }
-
 .container .frame .riizeImg {
   position: absolute;
   width: 360px;
   height: 360px;
   top: 226px;
   left: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 1;
   opacity: 0;
-  -webkit-animation: fadeInOut .5s ease-in forwards;
-          animation: fadeInOut .5s ease-in forwards;
-  -webkit-animation-delay: 7.7s;
-          animation-delay: 7.7s;
+  animation: fadeInOut 0.5s ease-in forwards;
+  animation-delay: 7.7s;
 }
-
 .container .frame .riizeImg img {
   width: 100%;
   height: 100%;
 }
-
 .container .frame .btnBox {
   position: absolute;
   width: 360px;
@@ -77,7 +60,6 @@
   top: 226px;
   left: 8px;
 }
-
 .container .frame .btnBox .btn {
   position: absolute;
   width: 21px;
@@ -86,7 +68,6 @@
   left: 109px;
   z-index: 10;
 }
-
 .container .frame .btnBox .btn1 {
   position: absolute;
   width: 19px;
@@ -95,7 +76,6 @@
   left: 139px;
   z-index: 10;
 }
-
 .container .frame .btnBox .btn2 {
   position: absolute;
   width: 19px;
@@ -104,7 +84,6 @@
   left: 169px;
   z-index: 10;
 }
-
 .container .frame .btnBox .btn3 {
   position: absolute;
   width: 19px;
@@ -114,15 +93,6 @@
   z-index: 10;
 }
 
-@-webkit-keyframes fadeInOut {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes fadeInOut {
   from {
     opacity: 0;
@@ -130,5 +100,4 @@
   to {
     opacity: 1;
   }
-}
-/*# sourceMappingURL=product.module.css.map */
+}/*# sourceMappingURL=product.module.css.map */
