@@ -6,8 +6,13 @@ import getaguitarwb from '../asset/getaguitarwb.png'
 import talksaxywb from '../asset/talksaxywb.png'
 import love119wb from '../asset/love119wb.png'
 import staricon from '../asset/staricon.png'
+import homeBtnMsg from '../asset/homeBtnMsg.svg';
+import { useNavigate } from 'react-router-dom'
 
 function DetailLike() {
+
+  const navigate = useNavigate();
+
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
   const [selectedRatio, setSelectedRatio] = useState([0,0,0,0,0,0]);
 
@@ -113,6 +118,10 @@ function DetailLike() {
             <div className={`${styles.box} ${styles.box6}`}>
               <img className={styles.staricon} src={staricon} alt="staricon"/>
             </div>
+          </div>
+
+          <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
+            <img src={homeBtnMsg} alt="no homeBtnMsg img" />
           </div>
 
         </div>

@@ -9,8 +9,12 @@ import p2g3 from '../asset/p2_g3.gif';
 import p3g1 from '../asset/p3_g1.gif';
 import p3g2 from '../asset/p3_g2.gif';
 import p3g3 from '../asset/p3_g3.gif';
+import homeBtn from '../asset/homeBtn.svg';
+import { useNavigate } from 'react-router-dom';
 
 function Res({ selectedGuitar, selectedPeak }) {
+
+  const navigate = useNavigate();
 
   let imagePath;
   if (selectedGuitar.id === 1 && selectedPeak.id === 1) {
@@ -38,7 +42,12 @@ function Res({ selectedGuitar, selectedPeak }) {
   return (
     <div className={styles.container}>
       <div className={styles.ResFrame}>
+        <div className={styles.resTitle}>HAPPY <br></br> WONBINDAY</div>
         {imagePath && <img className={styles.Resimg} src={imagePath} alt="no gif" />}
+        <div className={styles.downImg}>Download image</div>
+      </div>
+      <div className={styles.homeBtn} onClick={()=>{navigate('/product')}}>
+        <img src={homeBtn} alt="no homeBtn img" />
       </div>
     </div>
   );

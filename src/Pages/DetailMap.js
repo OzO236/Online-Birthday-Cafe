@@ -3,9 +3,12 @@ import { Map, MarkerClusterer, CustomOverlayMap } from 'react-kakao-maps-sdk';
 import styles from '../style/detailMap.module.css'
 import riizebarcode from '../asset/riizebarcode.png'
 import bgImg from '../asset/detailmap_bg.svg';
+import homeBtnMsg from '../asset/homeBtnMsg.svg';
+import { useNavigate } from 'react-router-dom';
 
 function DetailMap() {
     
+  const navigate = useNavigate();
   
     const positions = [
       {
@@ -248,6 +251,10 @@ function DetailMap() {
             </div>
           </div>
           <img className={styles.barcode} src={riizebarcode} alt="barcode"/>
+        </div>
+
+        <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
+          <img src={homeBtnMsg} alt="no homeBtnMsg" />
         </div>
       </div>
     </div>

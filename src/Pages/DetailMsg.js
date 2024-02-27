@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../style/detailMsg.module.css';
 import Modal from './Modal';
+import homeBtnMsg from '../asset/homeBtnMsg.svg';
+import { useNavigate } from 'react-router-dom';
 
 function DetailMsg() {
+
+  const navigate = useNavigate();
 
   let [messages, setMessages] = useState([]);
   let [showModal, setShowModal] = useState(false);
@@ -39,6 +43,10 @@ function DetailMsg() {
             <span className={styles.toName}>희주</span>
           </div>
   
+        </div>
+        
+        <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
+          <img src={homeBtnMsg} alt="no homeBtnMsg img" />
         </div>
       </div>
       {/* showModal이 true이면 <Modal />을 렌더링합니다.
