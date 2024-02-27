@@ -205,8 +205,8 @@ function DetailMap() {
             <Map 
               // 지도의 중심좌표
               center={{
-                lat: 33.450701,
-                lng: 126.570667,
+                lat: 37.5642135,
+                lng: 127.0016985,
               }}
               // 지도의 크기
               style={{
@@ -215,7 +215,7 @@ function DetailMap() {
                 borderRadius: '7px'
               }}
               // 지도의 확대 레벨(기존3)
-              level={12}
+              level={15}
             >
         
             <MarkerClusterer
