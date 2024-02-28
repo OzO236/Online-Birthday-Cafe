@@ -30,7 +30,7 @@ function App() {
         <Route path='/detailMap' element={<DetailMap/>}></Route>
 
          {/* 모든 다른 경로에 대한 처리 */}
-         <Route path='*' element={<div> 404Page </div>}/>
+         <Route path='*' element={<div> <h1>404 - Not Found</h1> </div>}/>
 
       </Routes>
     </div>
