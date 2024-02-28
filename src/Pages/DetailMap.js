@@ -246,9 +246,9 @@ function DetailMap() {
           <span className={`${styles.star} ${styles.star3}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>
           <div className={styles.textcontainer}>
             <div className={styles.flexcontainer}>
-              <span className={styles.text}>국내에 있는 원빈 생일 카페 한정으로 지도에 표시됩니다.</span>
-              <span className={styles.text}>지도 외에 다른 카페가 있다면 다음의 메일로 알려주시면 감사하겠습니다.</span>
-              <span className={styles.text}>yeonju9623@naver.com</span>
+              <span className={styles.text}>29일까지 올라온 국내에 있는 원빈 생일 카페 한정으로 지도에 표시됩니다.</span>
+              <span className={styles.text}>자세한 이벤트 기간 및 안내사항은 해당 카페 참고 부탁드립니다.</span>
+              <span className={styles.text}>문의는 트위터 계정 @vvozo32로 부탁드립니다.</span>
             </div>
           </div>
           <img className={styles.barcode} src={riizebarcode} alt="barcode"/>
