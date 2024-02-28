@@ -2,40 +2,60 @@
 
 .container{
   background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   
   .frame{
-    background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    .ExplainImg{
-      position: absolute;
-      width: 351px;
-      height: 494px;
-      top: 159px;
-      left: 12px;
+    .imgFrame{
+      position: fixed;
+      width: 375px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      img{
-        width: 100%;
-        height: 100%;
+      .ExplainImg{
+        position: fixed;
+        width: 355px;
+        height: auto;
+  
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .btnCon{
+        position: fixed;
+        width: 355px;
+        height: auto;
+        background-color: aqua;
+        z-index: 1;
+
+        .exBtn{
+          position: absolute;
+          width: 55px;
+          height: 35px;
+          top: 207px;
+          left: 293px;
+          z-index: 1;
+        }
       }
     }
 
-    .btn{
-      position: absolute;
-      width: 54px;
-      height: 35px;
-      top: 610px;
-      left: 300px;
-      z-index: 1;
-    }
 
     // Making.js
     .flexBox{
@@ -105,7 +125,7 @@
   .ResFrame{
     width: 100vw;
     height: 100vh;
-    position: relative;
+    position: absolute;
     background: radial-gradient(50% 50% at 50% 50%, rgb(80, 125, 221) 0%, rgb(0, 0, 0) 100%);
     display: flex;
     flex-direction: column;
@@ -147,12 +167,12 @@
   }
 
   .homeBtn{
-    position: absolute;
+    position: fixed;
     z-index: 3;
     width: 45px;
     height: 45px;
-    top: 750px;
-    left: 310px;
+    bottom: 15px;
+    right: 15px;
 
     img{
       width: 100%;

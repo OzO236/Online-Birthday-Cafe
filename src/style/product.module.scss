@@ -2,18 +2,21 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #000;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   .frame{
-    background: #000;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .notice{
       font-family: 'Noto Sans KR-Regular';
@@ -21,9 +24,10 @@
       font-size: 14px;
       color: #d5dff2;
       text-align: center;
-      position: absolute;
-      top: 159px;
-      left: 86px;
+      position: fixed;
+      // top: 159px;
+      // left: 86px;
+      margin-top: -500px;
       letter-spacing: 0;
       line-height: normal;
       opacity: 0;
@@ -32,19 +36,19 @@
     }
 
     .video{
-      position: absolute;
-      // width: 360px;
-      // height: 360px;
-      top: 226px;
-      left: 8px;
+      position: fixed;
+      width: 360px;
+      height: 360px;
+      // top: 226px;
+      // left: 8px;
     }
 
     .riizeImg{
-      position: absolute;
+      position: fixed;
       width: 360px;
       height: 360px;
-      top: 226px;
-      left: 8px;
+      // top: 226px;
+      // left: 8px;
       object-fit: cover;
       z-index: 1;
       opacity: 0;
@@ -58,11 +62,12 @@
     }
 
     .btnBox{
-      position: absolute;
+      position: fixed;
       width: 360px;
       height: 360px;
-      top: 226px;
-      left: 8px;
+      z-index: 10;
+      // top: 226px;
+      // left: 8px;
 
       .btn{
         position: absolute;
@@ -70,7 +75,6 @@
         height: 39px;
         top: 38px;
         left: 109px;
-        z-index: 10;
       }
       .btn1{
         position: absolute;
@@ -78,7 +82,6 @@
         height: 33px;
         top: 38px;
         left: 139px;
-        z-index: 10;
       }
       .btn2{
         position: absolute;
@@ -86,7 +89,6 @@
         height: 30px;
         top: 41px;
         left: 169px;
-        z-index: 10;
       }
       .btn3{
         position: absolute;
@@ -94,7 +96,6 @@
         height: 23px;
         top: 48px;
         left: 193px;
-        z-index: 10;
       }
     }
   }

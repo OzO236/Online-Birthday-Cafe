@@ -1,36 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Sixtyfour&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
 .container {
   background-color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.container .frame {
-  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
+  position: relative;
   width: 100vw;
   height: 100vh;
-  position: relative;
 }
-.container .frame .ExplainImg {
-  position: absolute;
-  width: 351px;
-  height: 494px;
-  top: 159px;
-  left: 12px;
+.container .frame {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container .frame .ExplainImg img {
+.container .frame .imgFrame {
+  position: fixed;
+  width: 375px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .frame .imgFrame .ExplainImg {
+  position: fixed;
+  width: 355px;
+  height: auto;
+}
+.container .frame .imgFrame .ExplainImg img {
   width: 100%;
   height: 100%;
 }
-.container .frame .btn {
+.container .frame .imgFrame .btnCon {
+  position: fixed;
+  width: 355px;
+  height: auto;
+  background-color: aqua;
+  z-index: 1;
+}
+.container .frame .imgFrame .btnCon .exBtn {
   position: absolute;
-  width: 54px;
+  width: 55px;
   height: 35px;
-  top: 610px;
-  left: 300px;
+  top: 207px;
+  left: 293px;
   z-index: 1;
 }
 .container .frame .flexBox {
@@ -89,7 +106,7 @@
 .container .ResFrame {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
   background: radial-gradient(50% 50% at 50% 50%, rgb(80, 125, 221) 0%, rgb(0, 0, 0) 100%);
   display: flex;
   flex-direction: column;
@@ -124,12 +141,12 @@
   color: #E7EDF5;
 }
 .container .homeBtn {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   width: 45px;
   height: 45px;
-  top: 750px;
-  left: 310px;
+  bottom: 15px;
+  right: 15px;
 }
 .container .homeBtn img {
   width: 100%;

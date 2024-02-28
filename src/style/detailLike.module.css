@@ -2,42 +2,61 @@
   position: relative;
   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   background-color: rgb(255, 255, 255);
-  width: 375px;
-  height: 812px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
-  background-image: url(../asset/DetailLike_bg.png);
-  background-repeat: no-repeat;
+  position: absolute;
   width: 100%;
-  height: 865px;
+  height: 100%;
+  overflow: hidden;
 }
-
-.title {
+.container .paper {
+  position: fixed;
+  width: 614px;
+  height: 865px;
+  bottom: 35px;
+  right: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .paper img {
+  width: 100%;
+  height: 100%;
+}
+.container .paper .bigBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 89px;
+  left: 260px;
+  overflow: hidden;
+}
+.container .paper .bigBox .title {
   font-family: "Anthony";
   position: absolute;
   top: 56px;
   left: 52px;
   font-size: 24px;
 }
-
-.p1 {
+.container .paper .bigBox .p1 {
   font-family: "Noto Sans KR-Regular";
   position: absolute;
   top: 134px;
   left: 60px;
   font-size: 10px;
 }
-
-.p2 {
+.container .paper .bigBox .p2 {
   font-family: "Noto Sans KR-Regular";
   position: absolute;
   top: 155px;
   left: 60px;
   font-size: 7px;
 }
-
-.box {
+.container .paper .bigBox .box {
   font-family: "Raleway_Dots";
   position: absolute;
   width: 120px;
@@ -47,8 +66,7 @@
   display: flex;
   justify-content: center;
 }
-
-.overlayBox {
+.container .paper .bigBox .overlayBox {
   opacity: 0.4;
   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   border: 1px solid;
@@ -62,103 +80,86 @@
   align-items: center;
   color: #000;
 }
-
-.box1 {
+.container .paper .bigBox .box1 {
   left: 59px;
   top: 185px;
 }
-
-.box1 span {
+.container .paper .bigBox .box1 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box1 .sirenimg {
+.container .paper .bigBox .box1 .sirenimg {
   position: absolute;
   top: 30px;
   width: 63px;
   height: 93px;
 }
-
-.box2 {
+.container .paper .bigBox .box2 {
   left: 197px;
   top: 185px;
 }
-
-.box2 span {
+.container .paper .bigBox .box2 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box2 .memoriesimg {
+.container .paper .bigBox .box2 .memoriesimg {
   position: absolute;
   top: 20px;
   width: 90px;
   height: 120px;
 }
-
-.box3 {
+.container .paper .bigBox .box3 {
   left: 59px;
   top: 363px;
 }
-
-.box3 span {
+.container .paper .bigBox .box3 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box3 .getaguitarimg {
+.container .paper .bigBox .box3 .getaguitarimg {
   position: absolute;
   top: 27px;
   width: 49px;
   height: 114px;
 }
-
-.box4 {
+.container .paper .bigBox .box4 {
   left: 197px;
   top: 363px;
 }
-
-.box4 span {
+.container .paper .bigBox .box4 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box4 .talksaxyimg {
+.container .paper .bigBox .box4 .talksaxyimg {
   position: absolute;
   top: 27px;
   width: 79px;
   height: 119px;
 }
-
-.box5 {
+.container .paper .bigBox .box5 {
   left: 59px;
   top: 540px;
 }
-
-.box5 span {
+.container .paper .bigBox .box5 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box5 .love119img {
+.container .paper .bigBox .box5 .love119img {
   position: absolute;
   top: 27px;
   width: 41px;
   height: 112px;
 }
-
-.box6 {
+.container .paper .bigBox .box6 {
   left: 197px;
   top: 540px;
 }
-
-.box6 .staricon {
+.container .paper .bigBox .box6 .staricon {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -166,8 +167,7 @@
   width: 80px;
   height: auto;
 }
-
-.homeBtnMsg {
+.container .paper .bigBox .homeBtnMsg {
   position: absolute;
   z-index: 3;
   width: 35px;
@@ -175,7 +175,7 @@
   top: 717px;
   left: 284px;
 }
-.homeBtnMsg img {
+.container .paper .bigBox .homeBtnMsg img {
   width: 100%;
   height: 100%;
 }/*# sourceMappingURL=detailLike.module.css.map */

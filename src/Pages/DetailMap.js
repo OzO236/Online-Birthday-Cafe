@@ -200,58 +200,61 @@ function DetailMap() {
         <div className={styles.container}> 
           <div className={styles.bgImg}>
             <img src={bgImg} alt="no bgImg" />
-          </div>
-          <span className={`${styles.star} ${styles.star1}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>        
-          <div className={styles.title}>Wonbin's birthday <br/> cafe map </div>
-          <span className={`${styles.star} ${styles.star2}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>
-          <div className={styles.rectangle}>
-            <Map 
-              // 지도의 중심좌표
-              center={{
-                lat: 37.5642135,
-                lng: 127.0016985,
-              }}
-              // 지도의 크기
-              style={{
-                width: "100%",
-                height: "395px",
-                borderRadius: '7px'
-              }}
-              // 지도의 확대 레벨(기존3)
-              level={15}
-            >
-        
-            <MarkerClusterer
-                    averageCenter={true}
-                    minLevel={10}
-              >
-                
-              {positions.map((position, index) => (
-                <CustomOverlayMap
-                key={index}
-                position={position.latlng}
-              >
-                <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'-3px'}}>
-                  <div className={styles.speech}>
-                    <span style={{fontFamily: 'Suite-Light', fontSize: '10px', display: 'block', margin:'3px'}}>{position.title}</span>
-                  </div>
-                <img src={wbLocationImg} alt="이미지" style={{width: '40px', height:'auto', marginTop:'3px'}}/>
+            
+            <div className={styles.bigBox}>
+              <span className={`${styles.star} ${styles.star1}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>        
+              <div className={styles.title}>Wonbin's birthday <br/> cafe map </div>
+              <span className={`${styles.star} ${styles.star2}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>
+              <div className={styles.rectangle}>
+                <Map 
+                  // 지도의 중심좌표
+                  center={{
+                    lat: 37.5642135,
+                    lng: 127.0016985,
+                  }}
+                  // 지도의 크기
+                  style={{
+                    width: "100%",
+                    height: "395px",
+                    borderRadius: '7px'
+                  }}
+                  // 지도의 확대 레벨(기존3)
+                  level={15}
+                >
+            
+                <MarkerClusterer
+                        averageCenter={true}
+                        minLevel={10}
+                  >
+                    
+                  {positions.map((position, index) => (
+                    <CustomOverlayMap
+                    key={index}
+                    position={position.latlng}
+                  >
+                    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'-3px'}}>
+                      <div className={styles.speech}>
+                        <span style={{fontFamily: 'Suite-Light', fontSize: '10px', display: 'block', margin:'3px'}}>{position.title}</span>
+                      </div>
+                    <img src={wbLocationImg} alt="이미지" style={{width: '40px', height:'auto', marginTop:'3px'}}/>
+                    </div>
+                  </CustomOverlayMap>
+                    
+                  ))}
+                  </MarkerClusterer>
+                </Map>
+              </div>
+              <span className={`${styles.star} ${styles.star3}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>
+              <div className={styles.textcontainer}>
+                <div className={styles.flexcontainer}>
+                  <span className={styles.text}>29일까지 올라온 국내에 있는 원빈 생일 카페 한정으로 지도에 표시됩니다.</span>
+                  <span className={styles.text}>자세한 이벤트 기간 및 안내사항은 해당 카페 참고 부탁드립니다.</span>
+                  <span className={styles.text}>문의는 트위터 계정 @vvozo32로 부탁드립니다.</span>
                 </div>
-              </CustomOverlayMap>
-                
-              ))}
-              </MarkerClusterer>
-            </Map>
-          </div>
-          <span className={`${styles.star} ${styles.star3}`}>★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆ - - ★ - - ☆</span>
-          <div className={styles.textcontainer}>
-            <div className={styles.flexcontainer}>
-              <span className={styles.text}>29일까지 올라온 국내에 있는 원빈 생일 카페 한정으로 지도에 표시됩니다.</span>
-              <span className={styles.text}>자세한 이벤트 기간 및 안내사항은 해당 카페 참고 부탁드립니다.</span>
-              <span className={styles.text}>문의는 트위터 계정 @vvozo32로 부탁드립니다.</span>
+              </div>
+              <div className={styles.barcodeImg}><img className={styles.barcode} src={riizebarcode} alt="barcode"/></div>
             </div>
           </div>
-          <img className={styles.barcode} src={riizebarcode} alt="barcode"/>
         </div>
 
         <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>

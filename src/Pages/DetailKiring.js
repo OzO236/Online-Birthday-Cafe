@@ -9,8 +9,10 @@ function DetailKiring() {
   return (
     <div className={styles.container}>
       <div className={styles.frame}>
-        <img className={styles.ExplainImg} src={ExplainImg} alt="no ExplainImg" />
-        <div className={styles.btn} onClick={() => { navigate('/making') }}></div>
+        <div className={styles.imgFrame}>
+          <img className={styles.ExplainImg} src={ExplainImg} alt="no ExplainImg" />
+          <div className={styles.btnCon}><div className={styles.exBtn} onClick={() => { navigate('/making') }}></div></div>
+          </div>
       </div>
     </div>
   )

@@ -15,6 +15,7 @@
   padding: 0;
   text-decoration: none;
   background-color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,9 +23,9 @@
   width: 100vw;
   height: 100vh;
   font-size: 16px;
+  overflow: hidden;
 }
 .container .frame {
-  background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -36,6 +37,7 @@
   top: 43px;
   left: 31px;
   background-image: url("../asset/paper.svg");
+  overflow: hidden;
 }
 .container .frame .paper .toText {
   font-family: "Anthony", Helvetica;

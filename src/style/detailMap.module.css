@@ -26,12 +26,24 @@
   height: 100%;
 }
 
+.bigBox {
+  width: 320px;
+  height: 700px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -40px;
+  left: -25px;
+}
+
 .title {
   font-family: "Anthony";
   text-align: center;
   font-size: 24px;
   position: absolute;
   top: 86px;
+  margin-left: 45px;
 }
 
 .rectangle {
@@ -88,12 +100,22 @@
   left: 10px;
 }
 
-.barcode {
+.barcodeImg {
   position: absolute;
-  width: 212px;
-  height: 22px;
-  top: 670px;
-  left: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barcodeImg .barcode {
+  position: absolute;
+  width: 230px;
+  height: 24.4px;
+  bottom: -345px;
+  left: -93px;
+}
+.barcodeImg .barcode img {
+  width: 100%;
+  height: 100%;
 }
 
 .star {
@@ -120,12 +142,12 @@
 }
 
 .homeBtnMsg {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   width: 40px;
   height: 40px;
-  top: 755px;
-  left: 315px;
+  bottom: 15px;
+  right: 15px;
 }
 .homeBtnMsg img {
   width: 100%;

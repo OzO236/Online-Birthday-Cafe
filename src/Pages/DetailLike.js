@@ -8,6 +8,7 @@ import love119wb from '../asset/love119wb.png'
 import staricon from '../asset/staricon.png'
 import homeBtnMsg from '../asset/homeBtnMsg.svg';
 import { useNavigate } from 'react-router-dom'
+import paper from '../asset/paper.svg';
 
 function DetailLike() {
 
@@ -58,80 +59,85 @@ function DetailLike() {
     <div>
       <div className={styles.total}>
         <div className={styles.container}>
-          <div className={styles.title}>Which Wonbin do you like <br/> the most?</div>
-          <div className={styles.p1}><p>최애 원빈이의 컨셉 하나를 선택해주세요.</p></div>
-          <div className={styles.p2}><p>※하나만 선택 가능하며 한 번 누르면 다시 되돌릴 수 없습니다.</p></div>
-
-          <div className={styles.cardbox}>
-            <div className={`${styles.box} ${styles.box1}`} onClick={() => handleBoxClick(1)}>
-              <span>siren</span>
-              <img className={styles.sirenimg} src={sirenwb} alt="sirenimg"/>
-              {/* 클릭시 overlayBox와 텍스트를 표시 */}
-              {isOverlayVisible && (
-                <div className={`${styles.overlayBox}`} style={{ 
-                  height: `${145*(selectedRatio[1]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
-                  marginTop: `${145 - 145*(selectedRatio[1]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
-                  }}>
-                  {selectedRatio[1]}%
+          <div className={styles.paper}>
+            <img src={paper} alt="no paper img" />
+            <div className={styles.bigBox}>
+              <div className={styles.title}>Which Wonbin do you like <br/> the most?</div>
+              <div className={styles.p1}><p>최애 원빈이의 컨셉 하나를 선택해주세요.</p></div>
+              <div className={styles.p2}><p>※하나만 선택 가능하며 한 번 누르면 다시 되돌릴 수 없습니다.</p></div>
+    
+              <div className={styles.cardbox}>
+                <div className={`${styles.box} ${styles.box1}`} onClick={() => handleBoxClick(1)}>
+                  <span>siren</span>
+                  <img className={styles.sirenimg} src={sirenwb} alt="sirenimg"/>
+                  {/* 클릭시 overlayBox와 텍스트를 표시 */}
+                  {isOverlayVisible && (
+                    <div className={`${styles.overlayBox}`} style={{ 
+                      height: `${145*(selectedRatio[1]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
+                      marginTop: `${145 - 145*(selectedRatio[1]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
+                      }}>
+                      {selectedRatio[1]}%
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-
-            <div className={`${styles.box} ${styles.box2}`} onClick={() => handleBoxClick(2)}>
-              <span>memories</span>
-              <img className={styles.memoriesimg} src={memorieswb} alt="memoriesimg"/>
-              {isOverlayVisible && (
-                <div className={`${styles.overlayBox}`} style={{ 
-                  height: `${145*(selectedRatio[2]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
-                  marginTop: `${145 - 145*(selectedRatio[2]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
-                  }}>
-                  {selectedRatio[2]}%
+    
+                <div className={`${styles.box} ${styles.box2}`} onClick={() => handleBoxClick(2)}>
+                  <span>memories</span>
+                  <img className={styles.memoriesimg} src={memorieswb} alt="memoriesimg"/>
+                  {isOverlayVisible && (
+                    <div className={`${styles.overlayBox}`} style={{ 
+                      height: `${145*(selectedRatio[2]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
+                      marginTop: `${145 - 145*(selectedRatio[2]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
+                      }}>
+                      {selectedRatio[2]}%
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-            <div className={`${styles.box} ${styles.box3}`} onClick={() => handleBoxClick(3)}>
-              <span>get a guitar</span>
-              <img className={styles.getaguitarimg} src={getaguitarwb} alt="getaguitarimg"/>
-              {isOverlayVisible && (
-                <div className={`${styles.overlayBox}`} style={{ 
-                  height: `${145*(selectedRatio[3]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
-                  marginTop: `${145 - 145*(selectedRatio[3]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
-                  }}>
-                  {selectedRatio[3]}%
+                <div className={`${styles.box} ${styles.box3}`} onClick={() => handleBoxClick(3)}>
+                  <span>get a guitar</span>
+                  <img className={styles.getaguitarimg} src={getaguitarwb} alt="getaguitarimg"/>
+                  {isOverlayVisible && (
+                    <div className={`${styles.overlayBox}`} style={{ 
+                      height: `${145*(selectedRatio[3]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
+                      marginTop: `${145 - 145*(selectedRatio[3]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
+                      }}>
+                      {selectedRatio[3]}%
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-            <div className={`${styles.box} ${styles.box4}`} onClick={() => handleBoxClick(4)}>
-              <span>talk saxy</span>
-              <img className={styles.talksaxyimg} src={talksaxywb} alt="talksaxyimg"/>
-              {isOverlayVisible && (
-                <div className={`${styles.overlayBox}`} style={{ 
-                  height: `${145*(selectedRatio[4]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
-                  marginTop: `${145 - 145*(selectedRatio[4]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
-                  }}>
-                  {selectedRatio[4]}%
+                <div className={`${styles.box} ${styles.box4}`} onClick={() => handleBoxClick(4)}>
+                  <span>talk saxy</span>
+                  <img className={styles.talksaxyimg} src={talksaxywb} alt="talksaxyimg"/>
+                  {isOverlayVisible && (
+                    <div className={`${styles.overlayBox}`} style={{ 
+                      height: `${145*(selectedRatio[4]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
+                      marginTop: `${145 - 145*(selectedRatio[4]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
+                      }}>
+                      {selectedRatio[4]}%
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-            <div className={`${styles.box} ${styles.box5 }`} onClick={() => handleBoxClick(5)}>
-              <span>love 119</span>
-              <img className={styles.love119img} src={love119wb} alt="love119img"/>
-              {isOverlayVisible && (
-                <div className={`${styles.overlayBox}`} style={{ 
-                  height: `${145*(selectedRatio[5]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
-                  marginTop: `${145 - 145*(selectedRatio[5]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
-                  }}>
-                  {selectedRatio[5]}%
+                <div className={`${styles.box} ${styles.box5 }`} onClick={() => handleBoxClick(5)}>
+                  <span>love 119</span>
+                  <img className={styles.love119img} src={love119wb} alt="love119img"/>
+                  {isOverlayVisible && (
+                    <div className={`${styles.overlayBox}`} style={{ 
+                      height: `${145*(selectedRatio[5]/100)}px`, // 높이를 선택된 비율을 145로 나눈 값으로 설정
+                      marginTop: `${145 - 145*(selectedRatio[5]/100)}px` // marginTop을 120px에서 선택된 비율을 145로 나눈 값으로 설정
+                      }}>
+                      {selectedRatio[5]}%
+                    </div>
+                  )}
                 </div>
-              )}
+                <div className={`${styles.box} ${styles.box6}`}>
+                  <img className={styles.staricon} src={staricon} alt="staricon"/>
+                </div>
+              </div>
+    
+              <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
+                <img src={homeBtnMsg} alt="no homeBtnMsg img" />
+              </div>
             </div>
-            <div className={`${styles.box} ${styles.box6}`}>
-              <img className={styles.staricon} src={staricon} alt="staricon"/>
-            </div>
-          </div>
-
-          <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
-            <img src={homeBtnMsg} alt="no homeBtnMsg img" />
           </div>
 
         </div>
