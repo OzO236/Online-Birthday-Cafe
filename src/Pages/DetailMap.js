@@ -5,6 +5,7 @@ import riizebarcode from '../asset/riizebarcode.png'
 import bgImg from '../asset/detailmap_bg.svg';
 import homeBtnMsg from '../asset/homeBtnMsg.svg';
 import { useNavigate } from 'react-router-dom';
+import wbLocationImg from '../asset/wbLocationImg.png';
 
 function DetailMap() {
     
@@ -207,8 +208,8 @@ function DetailMap() {
             <Map 
               // 지도의 중심좌표
               center={{
-                lat: 33.450701,
-                lng: 126.570667,
+                lat: 37.5642135,
+                lng: 127.0016985,
               }}
               // 지도의 크기
               style={{
@@ -217,7 +218,7 @@ function DetailMap() {
                 borderRadius: '7px'
               }}
               // 지도의 확대 레벨(기존3)
-              level={12}
+              level={15}
             >
         
             <MarkerClusterer
@@ -230,11 +231,11 @@ function DetailMap() {
                 key={index}
                 position={position.latlng}
               >
-                <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'-3px'}}>
-                  <div style={{border:'1px solid', backgroundColor:'#fff', borderRadius:'4px', padding: '0 5px', marginBottom:'3px', fontSize:'16px'}}>
-                    <span>{position.title}</span>
+                <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'-3px'}}>
+                  <div className={styles.speech}>
+                    <span style={{fontFamily: 'Suite-Light', fontSize: '10px', display: 'block', margin:'3px'}}>{position.title}</span>
                   </div>
-                <img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png" alt="이미지" style={{width: '20px', height:'auto'}}/>
+                <img src={wbLocationImg} alt="이미지" style={{width: '40px', height:'auto', marginTop:'3px'}}/>
                 </div>
               </CustomOverlayMap>
                 
