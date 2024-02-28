@@ -8,7 +8,6 @@ import Res from './Pages/Res';
 import DetailMsg from './Pages/DetailMsg';
 import DetailLike from './Pages/DetailLike';
 import DetailMap from './Pages/DetailMap';
-import { useEffect } from 'react';
 
 function App() {
 

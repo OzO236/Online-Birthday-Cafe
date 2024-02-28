@@ -8,17 +8,15 @@
 
 .container {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 .container .paper {
   position: fixed;
   width: 614px;
   height: 865px;
-  bottom: 35px;
+  bottom: 25px;
   right: 30px;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,8 +29,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 89px;
-  left: 260px;
+  top: 145px;
+  left: 230px;
   overflow: hidden;
 }
 .container .paper .bigBox .title {
@@ -172,8 +170,8 @@
   z-index: 3;
   width: 35px;
   height: 35px;
-  top: 717px;
-  left: 284px;
+  top: 670px;
+  left: 335px;
 }
 .container .paper .bigBox .homeBtnMsg img {
   width: 100%;

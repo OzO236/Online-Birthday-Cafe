@@ -42,12 +42,13 @@ function DetailMsg() {
             <span className={styles.toText}>From.</span>
             <span className={styles.toName}>희주</span>
           </div>
+
+          <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
+            <img src={homeBtnMsg} alt="no homeBtnMsg img" />
+          </div>
   
         </div>
         
-        <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
-          <img src={homeBtnMsg} alt="no homeBtnMsg img" />
-        </div>
       </div>
       {/* showModal이 true이면 <Modal />을 렌더링합니다.
         showModal이 false이면 <Modal />을 렌더링하지 않습니다. */}

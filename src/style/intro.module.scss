@@ -147,54 +147,79 @@
         border-color: #020101;
   
         .chatBox1{
-          // width: 100%;
-          // height: 100%;
+          width: 130px;
+          height: 39px;
           position: absolute;
           top: 10px;
           left: 2px;
           opacity: 0;
           animation: fadeInOut 1s ease forwards;
           animation-delay: .5s;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
         }
         .chatBox2{
-          // width: 100%;
-          // height: 100%;
+          width: 73px;
+          height: 33px;
           position: absolute;
           top: 55px;
           left: 2px;
           opacity: 0;
           animation: fadeInOut 1s ease forwards;
           animation-delay: 2s;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
         }
         .chatBox3{
-          // width: 100%;
-          // height: 100%;
+          width: 68px;
+          height: 33px;
           position: absolute;
           top: 100px;
           left: 125px;
           opacity: 0;
           animation: fadeInOut 1s ease forwards;
           animation-delay: 3.5s;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
         }
         .chatBox4{
-          // width: 100%;
-          // height: 100%;
+          width: 149px;
+          height: 33px;
           position: absolute;
           top: 145px;
           left: 2px;
           opacity: 0;
           animation: fadeInOut 1s ease forwards;
           animation-delay: 5s;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
         }
         .chatBox5{
-          // width: 100%;
-          // height: 100%;
+          width: 67px;
+          height: 39px;
           position: absolute;
           top: 185px;
           left: 2px;
           opacity: 0;
           animation: fadeInOut 1s ease forwards;
           animation-delay: 6.5s;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
         }
         .imgRiize{
           width: 190px;
@@ -220,6 +245,11 @@
         left: 213px;
         border: 2px solid #020101;
         border-radius: 50px;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
       }
   
       .member{

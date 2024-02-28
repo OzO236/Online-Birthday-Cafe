@@ -25,21 +25,20 @@
   width: 100vw;
   height: 100vh;
   font-size: 16px;
-  overflow: hidden;
 
   .frame{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 
     .paper{
       position: relative;
-      width: 614px;
-      height: 865px;
+      width: auto;
+      height: 100vh;
       top: 43px;
-      left: 31px;
+      left: 50px;
       background-image: url('../asset/paper.svg');
-      overflow: hidden;
 
       // 공통 부분 (toText, toName)
       .toText{
@@ -73,8 +72,8 @@
 
       .msgBox{
         position: relative;
-        width: 280px;
-        max-height: 615px;
+        width: 300px;
+        max-height: 575px;
         top: 80px;
         left: 20px;
         display: flex;
@@ -89,30 +88,31 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 709px;
+        top: 690px;
         left: 210px;
       }
-    }
 
-    .homeBtnMsg{
-      position: absolute;
-      z-index: 3;
-      width: 40px;
-      height: 40px;
-      top: 750px;
-      left: 57px;
-
-      img{
-        width: 100%;
-        height: 100%;
+      .homeBtnMsg{
+        position: absolute;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        top: 690px;
+        left: 35px;
+  
+        img{
+          width: 100%;
+          height: 100%;
+        }
       }
     }
+
   }
 }
 
 .rect{
   position: relative;
-  width: 265px;
+  width: 280px;
   min-height: 45px;
   border: 1px solid #000;
   border-radius: 30px;
