@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map, MarkerClusterer, CustomOverlayMap } from 'react-kakao-maps-sdk';
+import { Map, MarkerClusterer, CustomOverlayMap, useKakaoLoader } from 'react-kakao-maps-sdk';
 import styles from '../style/detailMap.module.css'
 import riizebarcode from '../asset/riizebarcode.png'
 import bgImg from '../asset/detailmap_bg.svg';
@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import wbLocationImg from '../asset/wbLocationImg.png';
 
 function DetailMap() {
-    
+ 
   const navigate = useNavigate();
   
     const positions = [
