@@ -1,19 +1,171 @@
+// .total {
+//   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
+//   background-color: rgba(255, 255, 255, 1);
+//   width: auto;
+//   // height: 100vh;
+//   height: calc(var(--vh, 1vh) * 100);
+// }
+// .container {
+//   position: relative;
+//   top: 29px;
+//   height: 763px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .bgImg{
+//   width: 320px;
+//   height: 700px;
+//   position: absolute;
+//   margin-top: 10px;
+
+//   img{
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
+// .bigBox{
+//   width: 320px;
+//   height: 700px;
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   top: -40px;
+//   left: -25px;
+// }
+
+// .title {
+//   font-family: 'Anthony';
+//   text-align: center;
+//   font-size: 24px;
+//   position: absolute;
+//   top:86px;
+//   margin-left: 45px;
+// }
+// .rectangle {
+//   position: absolute;
+//   border: 1px solid;
+//   border-radius: 7px;
+//   height: 395px;
+//   width: 230px;
+//   left: 66px;
+//   top: 174px;
+// }
+// .speech {
+//   position: relative;
+//   font-family: 'Noto Sans KR-Regular';
+//   padding: 0 2.5px;
+//   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
+//   background-color: rgba(255, 255, 255, 1);
+// 	border-radius: 4px;
+// }
+// .speech:after {
+//   content: '';
+//   position: absolute;
+// 	bottom: 0;
+// 	left: 50%;
+// 	width: 0;
+// 	height: 0;
+// 	border: 7px solid transparent;
+// 	border-top-color: rgba(213, 223, 242, 1);
+// 	border-bottom: 0;
+// 	margin-left: -7px;
+// 	margin-bottom: -5px;
+//   z-index: -1; /* speech의 뒤로 보내기 */
+// }
+// .textcontainer {
+//   position: absolute;
+//   border: 1px solid;
+//   border-radius: 7px;
+//   height: 51px;
+//   width: 230px;
+//   top: 605px;
+//   left: 66px;
+// }
+// .flexcontainer{
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   gap: 4px;
+//   top: 5px;
+//   left: 10px;
+// }
+
+// .barcodeImg{
+//   position: absolute;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   .barcode {
+//     position: absolute;
+//     width: 230px;
+//     height: 24.4px;
+//     bottom: -345px;
+//     left: -93px;
+
+//     img{
+//       width: 100%;
+//       height: 100%;
+//     }
+//   }
+
+// }
+// .star {
+//   position: absolute;
+//   font-size: 7px;
+//   left: 63px;
+// }
+// .star1{
+//   top: 71px;
+// }
+// .star2{
+//   top: 151px;
+// }
+// .star3{
+//   top: 582px;
+// }
+// .text {
+//   font-family: 'Noto Sans KR-Regular';
+//   font-size: 7px;
+// }
+
+// .homeBtnMsg{
+//   position: fixed;
+//   z-index: 3;
+//   width: 40px;
+//   height: 40px;
+//   bottom: 15px;
+//   right: 15px;
+
+//   img{
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
 .total {
   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   background-color: rgba(255, 255, 255, 1);
-  width: 100vw;
-  height: 100vh;
-}
-.container {
-  position: relative;
-  top: 29px;
-  height: 763px;
+  width: 100vw; /* 화면 너비에 꽉 차도록 설정 */
+  height: 100vh; /* 화면 높이에 꽉 차도록 설정 */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
-.bgImg{
+.container {
+  position: relative;
+  width: 320px; /* 원하는 가로 크기 */
+  height: 700px; /* 원하는 세로 크기 */
+  margin-bottom: 20px;
+}
+
+.bgImg {
   width: 320px;
   height: 700px;
   position: absolute;
@@ -25,56 +177,62 @@
   }
 }
 
-.bigBox{
+.bigBox {
   width: 320px;
   height: 700px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   top: -40px;
-  left: -25px;
+  left: -5px;
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
 .title {
+  width: 271px;
+  height: 58px;
   font-family: 'Anthony';
   text-align: center;
   font-size: 24px;
   position: absolute;
-  top:86px;
-  margin-left: 45px;
+  top: 86px;
 }
+
 .rectangle {
   position: absolute;
   border: 1px solid;
   border-radius: 7px;
   height: 395px;
   width: 230px;
-  left: 66px;
   top: 174px;
+  left: 50%;
+  transform: translateX(-50%); /* 가로 중앙 정렬 */
 }
+
 .speech {
   position: relative;
   font-family: 'Noto Sans KR-Regular';
   padding: 0 2.5px;
   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   background-color: rgba(255, 255, 255, 1);
-	border-radius: 4px;
+  border-radius: 4px;
 }
+
 .speech:after {
   content: '';
   position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 7px solid transparent;
-	border-top-color: rgba(213, 223, 242, 1);
-	border-bottom: 0;
-	margin-left: -7px;
-	margin-bottom: -5px;
-  z-index: -1; /* speech의 뒤로 보내기 */
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: rgba(213, 223, 242, 1);
+  border-bottom: 0;
+  margin-left: -7px;
+  margin-bottom: -5px;
+  z-index: -1;
 }
+
 .textcontainer {
   position: absolute;
   border: 1px solid;
@@ -82,67 +240,64 @@
   height: 51px;
   width: 230px;
   top: 605px;
-  left: 66px;
-}
-.flexcontainer{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  top: 5px;
-  left: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* 가로 중앙 정렬 */
 }
 
-.barcodeImg{
+.flexcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Noto Sans KR-Regular';
+  font-size: 17px;
+  line-height: 16px;
+  margin-left: 7px;
+}
+
+.barcodeImg {
   position: absolute;
+  width: 214px;
+  height: 24px;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  .barcode {
-    position: absolute;
-    width: 230px;
-    height: 24.4px;
-    bottom: -345px;
-    left: -93px;
-
-    img{
-      width: 100%;
-      height: 100%;
-    }
-  }
-
 }
+
+.barcode {
+  width: 100%;
+  height: 100%;
+}
+
 .star {
   position: absolute;
   font-size: 7px;
-  left: 63px;
+  left: 43px;
 }
-.star1{
+
+.star1 {
   top: 71px;
 }
-.star2{
+
+.star2 {
   top: 151px;
 }
-.star3{
+
+.star3 {
   top: 582px;
 }
+
 .text {
   font-family: 'Noto Sans KR-Regular';
   font-size: 7px;
 }
 
-.homeBtnMsg{
+.homeBtnMsg {
   position: fixed;
   z-index: 3;
   width: 40px;
   height: 40px;
   bottom: 15px;
   right: 15px;
-
-  img{
-    width: 100%;
-    height: 100%;
-  }
 }

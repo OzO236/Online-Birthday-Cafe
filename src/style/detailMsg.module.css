@@ -31,12 +31,24 @@
   position: relative;
 }
 .container .frame .paper {
-  position: relative;
-  width: auto;
-  height: 100vh;
+  position: absolute;
+  width: 546px;
+  height: 769px;
   top: 43px;
   left: 50px;
-  background-image: url("../asset/paper.svg");
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .frame .paper .paperImg {
+  width: 546px;
+  height: 769px;
+}
+.container .frame .paper .paperImg img {
+  width: 100%;
+  height: 100%;
 }
 .container .frame .paper .toText {
   font-family: "Anthony", Helvetica;
@@ -66,9 +78,9 @@
   left: 28px;
 }
 .container .frame .paper .msgBox {
-  position: relative;
+  position: absolute;
   width: 300px;
-  max-height: 575px;
+  max-height: 520px;
   top: 80px;
   left: 20px;
   display: flex;
@@ -82,7 +94,7 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 690px;
+  top: 610px;
   left: 210px;
 }
 .container .frame .paper .homeBtnMsg {
@@ -90,7 +102,7 @@
   z-index: 1;
   width: 40px;
   height: 40px;
-  top: 690px;
+  top: 605px;
   left: 35px;
 }
 .container .frame .paper .homeBtnMsg img {

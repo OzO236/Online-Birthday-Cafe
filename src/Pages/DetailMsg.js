@@ -1,8 +1,9 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../style/detailMsg.module.css';
 import Modal from './Modal';
 import homeBtnMsg from '../asset/homeBtnMsg.svg';
 import { useNavigate } from 'react-router-dom';
+import paperImg from '../asset/paperMsg.png'
 
 function DetailMsg() {
 
@@ -28,24 +29,28 @@ function DetailMsg() {
     <div className={styles.container}>
       <div className={styles.frame}>
         <div className={styles.paper}>
-  
-          <div className={styles.to}>
-            <span className={styles.toText}>To.</span>
-            <span className={styles.toName}>원빈</span>
-          </div>
-  
-          <div className={styles.msgBox}>
-            <Box messages={messages} addMessage={addMessage} setShowModal={setShowModal} />
-          </div>
-  
-          <div className={styles.from}>
-            <span className={styles.toText}>From.</span>
-            <span className={styles.toName}>희주</span>
-          </div>
+          <div className={styles.paperImg}>
+            <img src={paperImg} alt="no paperImg" />
 
-          <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
-            <img src={homeBtnMsg} alt="no homeBtnMsg img" />
+            <div className={styles.to}>
+              <span className={styles.toText}>To.</span>
+              <span className={styles.toName}>원빈</span>
+            </div>
+    
+            <div className={styles.msgBox}>
+              <Box messages={messages} addMessage={addMessage} setShowModal={setShowModal} />
+            </div>
+    
+            <div className={styles.from}>
+              <span className={styles.toText}>From.</span>
+              <span className={styles.toName}>희주</span>
+            </div>
+
+            <div className={styles.homeBtnMsg} onClick={()=>{navigate('/product')}}>
+              <img src={homeBtnMsg} alt="no homeBtnMsg img" />
+            </div>
           </div>
+  
   
         </div>
         

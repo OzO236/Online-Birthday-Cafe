@@ -8,9 +8,12 @@ import love119wb from '../asset/love119wb.png'
 import staricon from '../asset/staricon.png'
 import homeBtnMsg from '../asset/homeBtnMsg.svg';
 import { useNavigate } from 'react-router-dom'
-import paper from '../asset/paper.svg';
+import paper from '../asset/paperLike.png';
 
 function DetailLike() {
+
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
 
   const navigate = useNavigate();
 
@@ -62,7 +65,7 @@ function DetailLike() {
           <div className={styles.paper}>
             <img src={paper} alt="no paper img" />
             <div className={styles.bigBox}>
-              <div className={styles.title}>Which Wonbin do you like <br/> the most?</div>
+              <div className={styles.title}>Which Wonbin do you like the most?</div>
               <div className={styles.p1}><p>최애 원빈이의 컨셉 하나를 선택해주세요.</p></div>
               <div className={styles.p2}><p>※하나만 선택 가능하며 한 번 누르면 다시 되돌릴 수 없습니다.</p></div>
     

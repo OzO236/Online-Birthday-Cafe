@@ -33,12 +33,26 @@
     position: relative;
 
     .paper{
-      position: relative;
-      width: auto;
-      height: 100vh;
+      position: absolute;
+      width: 546px;
+      height: 769px;
       top: 43px;
       left: 50px;
-      background-image: url('../asset/paper.svg');
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .paperImg{
+        width: 546px;
+        height: 769px;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
 
       // 공통 부분 (toText, toName)
       .toText{
@@ -71,9 +85,9 @@
       }
 
       .msgBox{
-        position: relative;
+        position: absolute;
         width: 300px;
-        max-height: 575px;
+        max-height: 520px;
         top: 80px;
         left: 20px;
         display: flex;
@@ -88,7 +102,7 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 690px;
+        top: 610px;
         left: 210px;
       }
 
@@ -97,7 +111,7 @@
         z-index: 1;
         width: 40px;
         height: 40px;
-        top: 690px;
+        top: 605px;
         left: 35px;
   
         img{

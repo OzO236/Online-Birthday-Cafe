@@ -2,17 +2,18 @@
 .total {
   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   background-color: rgb(255, 255, 255);
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; /* 화면 너비에 꽉 차도록 설정 */
+  height: 100vh; /* 화면 높이에 꽉 차도록 설정 */
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
 .container {
   position: relative;
-  top: 29px;
-  height: 763px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 320px; /* 원하는 가로 크기 */
+  height: 700px; /* 원하는 세로 크기 */
+  margin-bottom: 20px;
 }
 
 .bgImg {
@@ -30,20 +31,21 @@
   width: 320px;
   height: 700px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   top: -40px;
-  left: -25px;
+  left: -5px;
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
 .title {
+  width: 271px;
+  height: 58px;
   font-family: "Anthony";
   text-align: center;
   font-size: 24px;
   position: absolute;
   top: 86px;
-  margin-left: 45px;
 }
 
 .rectangle {
@@ -52,8 +54,9 @@
   border-radius: 7px;
   height: 395px;
   width: 230px;
-  left: 66px;
   top: 174px;
+  left: 50%;
+  transform: translateX(-50%); /* 가로 중앙 정렬 */
 }
 
 .speech {
@@ -77,7 +80,7 @@
   border-bottom: 0;
   margin-left: -7px;
   margin-bottom: -5px;
-  z-index: -1; /* speech의 뒤로 보내기 */
+  z-index: -1;
 }
 
 .textcontainer {
@@ -87,33 +90,32 @@
   height: 51px;
   width: 230px;
   top: 605px;
-  left: 66px;
+  left: 50%;
+  transform: translateX(-50%); /* 가로 중앙 정렬 */
 }
 
 .flexcontainer {
-  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  gap: 4px;
-  top: 5px;
-  left: 10px;
+  font-family: "Noto Sans KR-Regular";
+  font-size: 17px;
+  line-height: 16px;
+  margin-left: 7px;
 }
 
 .barcodeImg {
   position: absolute;
+  width: 214px;
+  height: 24px;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.barcodeImg .barcode {
-  position: absolute;
-  width: 230px;
-  height: 24.4px;
-  bottom: -345px;
-  left: -93px;
-}
-.barcodeImg .barcode img {
+
+.barcode {
   width: 100%;
   height: 100%;
 }
@@ -121,7 +123,7 @@
 .star {
   position: absolute;
   font-size: 7px;
-  left: 63px;
+  left: 43px;
 }
 
 .star1 {
@@ -148,8 +150,4 @@
   height: 40px;
   bottom: 15px;
   right: 15px;
-}
-.homeBtnMsg img {
-  width: 100%;
-  height: 100%;
 }/*# sourceMappingURL=detailMap.module.css.map */
