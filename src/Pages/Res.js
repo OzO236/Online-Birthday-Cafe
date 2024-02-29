@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../style/detailKiring.module.css';
 import p1g1 from '../asset/p1_g1.gif';
 import p1g2 from '../asset/p1_g2.gif';
@@ -21,9 +21,11 @@ import g1p3_static from '../asset/g1p3_static.png';
 import g2p3_static from '../asset/g2p3_static.png';
 import g3p3_static from '../asset/g3p3_static.png';
 
-function Res({ selectedGuitar, selectedPeak, setShowVideo }) {
+function Res({ selectedGuitar, selectedPeak }) {
 
   const navigate = useNavigate();
+  // 이미지 로딩 상태 관리 state
+  const [isLoading, setIsLoading] = useState(true);
 
   let imagePath;
   let pngPath;
@@ -84,7 +86,12 @@ function Res({ selectedGuitar, selectedPeak, setShowVideo }) {
     <div className={styles.container}>
       <div className={styles.ResFrame}>
         <div className={styles.resTitle}>HAPPY <br></br> WONBINDAY</div>
-        {imagePath && <img className={styles.Resimg} src={imagePath} alt="no gif" />}
+        <div className={`${styles.loadingContainer} ${isLoading ? styles.visible : styles.hidden}`}>
+          <div className={styles.loadingOverlay}>
+            <div className={styles.loadingText}>Loading ...</div>
+          </div>
+        </div>
+        {imagePath && <img className={styles.Resimg} src={imagePath} alt="no gif" onLoad={()=>setIsLoading(false)} />}
         <div className={styles.downImg} onClick={handleDownload}>Download image</div>
       </div>
       <div className={styles.homeBtn} onClick={()=>{navigate('/product')}}>

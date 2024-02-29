@@ -124,6 +124,34 @@
   color: #E7EDF5;
   text-align: center;
 }
+.container .ResFrame .loadingContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .ResFrame .loadingContainer .loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .ResFrame .loadingContainer .loadingText {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Anthony";
+  font-size: 16px;
+}
+.container .ResFrame .loadingContainer.visible {
+  display: block;
+}
+.container .ResFrame .loadingContainer.hidden {
+  display: none;
+}
 .container .ResFrame .Resimg {
   width: 100vw;
   height: auto;

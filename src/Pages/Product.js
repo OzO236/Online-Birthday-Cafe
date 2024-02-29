@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../style/product.module.css';
-import video from '../asset/720.gif';
+import video from '../asset/512.gif';
 import riizeImg from '../asset/total_new.png';
 import { useNavigate } from 'react-router-dom';
 import staticProduct from '../asset/0180.png';

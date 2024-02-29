@@ -146,6 +146,46 @@
       text-align: center;
     }
 
+    // loading 표시
+    .loadingContainer {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // width: 30px;
+      // height: auto;
+      // margin: 50px;
+    
+      .loadingOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .loadingText {
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Anthony';
+        font-size: 16px;
+      }
+    
+      // 로딩 표시를 보여줄 때
+      &.visible {
+        display: block;
+      }
+    
+      // 로딩 표시를 숨길 때
+      &.hidden {
+        display: none;
+      }
+    }
+    
+
     .Resimg{
       width: 100vw;
       height: auto;
