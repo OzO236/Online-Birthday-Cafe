@@ -1,69 +1,60 @@
-@charset "UTF-8";
 .total {
   position: relative;
   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   background-color: rgb(255, 255, 255);
   width: 100vw;
-  height: 100vh; /* 모바일 기기에 적합한 뷰포트 높이로 변경 */
-  overflow: hidden;
+  height: 100vh;
 }
 
 .container {
-  width: 100vw;
-  height: 100vh; /* 모바일 기기에 적합한 뷰포트 높이로 변경 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.paper {
   position: absolute;
-  width: 343px;
-  height: 780px;
-  top: 0;
-  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.container .paper {
+  position: fixed;
+  width: 614px;
+  height: 865px;
+  bottom: 25px;
+  right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.paper img {
+.container .paper img {
   width: 100%;
   height: 100%;
 }
-
-.bigBox {
+.container .paper .bigBox {
   position: absolute;
-  width: 343px;
-  height: 780px;
-  top: -30px;
-  left: -30px;
+  width: 100%;
+  height: 100%;
+  top: 145px;
+  left: 230px;
+  overflow: hidden;
 }
-
-.title {
+.container .paper .bigBox .title {
   font-family: "Anthony";
   position: absolute;
   top: 56px;
-  left: 60px;
+  left: 58px;
   font-size: 24px;
 }
-
-.p1 {
+.container .paper .bigBox .p1 {
   font-family: "Noto Sans KR-Regular";
   position: absolute;
-  top: 118px;
+  top: 134px;
   left: 60px;
   font-size: 10px;
 }
-
-.p2 {
+.container .paper .bigBox .p2 {
   font-family: "Noto Sans KR-Regular";
   position: absolute;
-  top: 140px;
+  top: 155px;
   left: 60px;
   font-size: 7px;
 }
-
-.box {
+.container .paper .bigBox .box {
   font-family: "Raleway_Dots";
   position: absolute;
   width: 120px;
@@ -73,8 +64,7 @@
   display: flex;
   justify-content: center;
 }
-
-.overlayBox {
+.container .paper .bigBox .overlayBox {
   opacity: 0.4;
   background: linear-gradient(180deg, rgb(80, 125, 221) 0%, rgb(213, 223, 242) 100%);
   border: 1px solid;
@@ -83,109 +73,91 @@
   width: 120px;
   font-family: "Anthony";
   font-size: 20px;
-  /* height: 50px; //동적으로 전달 */
   display: flex;
   justify-content: center;
   align-items: center;
   color: #000;
 }
-
-.box1 {
+.container .paper .bigBox .box1 {
   left: 59px;
-  top: 170px;
+  top: 185px;
 }
-
-.box1 span {
+.container .paper .bigBox .box1 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box1 .sirenimg {
+.container .paper .bigBox .box1 .sirenimg {
   position: absolute;
   top: 30px;
   width: 63px;
   height: 93px;
 }
-
-.box2 {
+.container .paper .bigBox .box2 {
   left: 197px;
-  top: 170px;
+  top: 185px;
 }
-
-.box2 span {
+.container .paper .bigBox .box2 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box2 .memoriesimg {
+.container .paper .bigBox .box2 .memoriesimg {
   position: absolute;
   top: 20px;
   width: 90px;
   height: 120px;
 }
-
-.box3 {
+.container .paper .bigBox .box3 {
   left: 59px;
-  top: 335px;
+  top: 363px;
 }
-
-.box3 span {
+.container .paper .bigBox .box3 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box3 .getaguitarimg {
+.container .paper .bigBox .box3 .getaguitarimg {
   position: absolute;
   top: 27px;
   width: 49px;
   height: 114px;
 }
-
-.box4 {
+.container .paper .bigBox .box4 {
   left: 197px;
-  top: 335px;
+  top: 363px;
 }
-
-.box4 span {
+.container .paper .bigBox .box4 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box4 .talksaxyimg {
+.container .paper .bigBox .box4 .talksaxyimg {
   position: absolute;
   top: 27px;
   width: 79px;
   height: 119px;
 }
-
-.box5 {
+.container .paper .bigBox .box5 {
   left: 59px;
-  top: 500px;
+  top: 540px;
 }
-
-.box5 span {
+.container .paper .bigBox .box5 span {
   position: absolute;
   font-size: 12px;
   top: 10px;
 }
-
-.box5 .love119img {
+.container .paper .bigBox .box5 .love119img {
   position: absolute;
   top: 27px;
   width: 41px;
   height: 112px;
 }
-
-.box6 {
+.container .paper .bigBox .box6 {
   left: 197px;
-  top: 500px;
+  top: 540px;
 }
-
-.box6 .staricon {
+.container .paper .bigBox .box6 .staricon {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -193,16 +165,15 @@
   width: 80px;
   height: auto;
 }
-
-.homeBtnMsg {
+.container .paper .bigBox .homeBtnMsg {
   position: absolute;
   z-index: 3;
   width: 35px;
   height: 35px;
   top: 670px;
-  left: 305px;
+  left: 335px;
 }
-.homeBtnMsg img {
+.container .paper .bigBox .homeBtnMsg img {
   width: 100%;
   height: 100%;
 }/*# sourceMappingURL=detailLike.module.css.map */

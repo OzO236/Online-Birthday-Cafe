@@ -65,7 +65,7 @@ function DetailLike() {
           <div className={styles.paper}>
             <img src={paper} alt="no paper img" />
             <div className={styles.bigBox}>
-              <div className={styles.title}>Which Wonbin do you like the most?</div>
+              <div className={styles.title}>Which Wonbin do you like <br></br> the most?</div>
               <div className={styles.p1}><p>최애 원빈이의 컨셉 하나를 선택해주세요.</p></div>
               <div className={styles.p2}><p>※하나만 선택 가능하며 한 번 누르면 다시 되돌릴 수 없습니다.</p></div>
     
