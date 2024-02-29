@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+// firestore의 메서드 import
+import { doc, getDoc, updateDoc } from 'firebase/firestore';
+import { db } from "../firebase";
 import styles from '../style/detailLike.module.css'
 import sirenwb from '../asset/sirenwb.png'
 import memorieswb from '../asset/memorieswb.png'
@@ -17,42 +20,73 @@ function DetailLike() {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
   const [selectedRatio, setSelectedRatio] = useState([0,0,0,0,0,0]);
   const [isBoxClicked, setIsBoxClicked] = useState(false); // 클릭 여부 상태값 추가
+  const [arr, setArr] = useState();
 
-  useEffect(() => {
-    // 페이지가 처음 로드될 때만 실행되도록 함
-    if (!localStorage.getItem('selected')) {
-      localStorage.setItem('selected', JSON.stringify([]));
+  
+
+  // async - await로 데이터 fetch 대기
+  async function getTest() {
+    // document에 대한 참조 생성
+    const docRef = doc(db, "HBDWBDB", "wbdb321");
+    // 참조에 대한 Snapshot 쿼리
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      setArr(docSnap.data())
     }
-  }, []);
+  };
+  
+  // 최초 마운트 시에 getTest import
+  useEffect(() => {
+    getTest()
+  }, [])
 
-   // 클릭 이벤트 핸들러 함수
-  const handleBoxClick = (boxNumber) => {
-    if (!isBoxClicked) {
-    // 상자가 선택되었음을 표시
-    setIsOverlayVisible(true);
+  //updateDoc(doc(db, "vote", "vote321"), { selected: [] }); //초기상태를 생성을 위한 코드
+  
+  //받아온 db객체 형식으로 출력하기
+  console.log(arr)
 
-    // 선택된 상자 번호를 localStorage에 저장
-    let selected = localStorage.getItem('selected') || [];
-    selected = JSON.parse(selected)
-    selected.push(boxNumber)
-    localStorage.setItem('selected', JSON.stringify(selected));
+  
+  // 선택된 상자의 백분율을 계산하여 업데이트하는 함수
+  const updateSelectedRatio = (selectedArray) => {
+    const totalCount = selectedArray.length;
+    const updatedRatio = Array(6).fill(0); // 0으로 초기화된 배열 생성
 
-    // 백분율 계산
-    const totalCount = selected.length;
-    const updatedRatio = [...selectedRatio]; // 이전 selectedRatio 배열을 복제하여 새로운 배열 생성
-    updatedRatio.forEach((ratio, index) => {
-      const countOfBox = selected.filter(item => item === index).length; 
-      updatedRatio[index] = Math.round((countOfBox / totalCount) * 100); // 해당 인덱스의 백분율을 계산하여 업데이트
+    // 선택된 상자 번호에 따라 백분율 계산
+    selectedArray.forEach((boxNumber) => {
+      updatedRatio[boxNumber] = Math.round((selectedArray.filter(item => item === boxNumber).length / totalCount) * 100);
     });
+
     setSelectedRatio(updatedRatio);
-    // 상자 클릭 여부 업데이트
-    setIsBoxClicked(true); }
+  };
+
+  // 상자 클릭 이벤트 핸들러
+  const handleBoxClick = async (boxNumber) => {
+    // 한 번 클릭된 상자라면 클릭 이벤트를 무시
+    if (isBoxClicked) return;
+
+    setIsOverlayVisible(true); // 오버레이 표시
+
+    // Firestore에서 선택된 배열 가져오기
+    const selectedArray = arr.selected || [];
+    
+    // 선택된 상자 번호를 배열에 추가
+    selectedArray.push(boxNumber);
+
+    // Firestore에 선택된 배열 업데이트
+    await updateDoc(doc(db, "HBDWBDB", "wbdb321"), { selected: selectedArray });
+
+    // 선택된 상자의 백분율 계산하여 업데이트
+    updateSelectedRatio(selectedArray);
+
+     // 클릭 상태를 true로 설정하여 더 이상 클릭되지 않도록 함
+     setIsBoxClicked(true);
   };
 
   //비동기 처리 확인용
-  useEffect(() => {
-    console.log(selectedRatio);
-  }, [selectedRatio]);
+  // useEffect(() => {
+  //   console.log(selectedRatio);
+  // }, [selectedRatio]);
 
 
   return(
