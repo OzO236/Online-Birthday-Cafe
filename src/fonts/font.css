@@ -20,3 +20,13 @@
   font-family: 'Suite-Light';
   src: url('./SUITE-Light.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Hardworking_donghee';
+  src: url('./Hardworking_donghee.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kyuri_diary';
+  src: url('./Kyuri_diary.ttf') format('truetype');
+}

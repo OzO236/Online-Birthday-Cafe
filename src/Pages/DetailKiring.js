@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../style/detailKiring.module.css';
-import ExplainImg from '../asset/explainpaper.svg';
+import ExplainImg from '../asset/explainpaper.png';
 
 function DetailKiring() {
   let navigate = useNavigate();

@@ -194,6 +194,22 @@ function DetailMap() {
       {
         title: "웜히어",
         latlng: { lat: 37.5483745, lng: 127.0488786 }
+      },
+      {
+        title: "부산 바닐라808",
+        latlng: { lat: 35.1525214, lng: 129.0209734 }
+      },
+      {
+        title: "폴 인 레미유 성수점",
+        latlng: { lat: 37.5483179, lng: 127.0475862 }
+      },
+      {
+        title: "카페 온",
+        latlng: { lat: 35.545879, lng: 129.3259706 }
+      },
+      {
+        title: "카페 러브모드",
+        latlng: { lat: 35.8711043, lng: 128.5892611 }
       }
     ]
 
