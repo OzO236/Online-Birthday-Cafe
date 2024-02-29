@@ -24,3 +24,10 @@ yarn-error.log*
 
 # API KEY
 .env
+
+#firebase
+./src/firebase.js
+.firebase/
+.firebaserc
+database.rules.json
+firebase.json
