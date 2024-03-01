@@ -30,7 +30,7 @@
   line-height: normal;
   opacity: 0;
   animation: fadeInOut 0.5s ease-in forwards;
-  animation-delay: 8.5s;
+  animation-delay: 7.2s;
 }
 .container .frame .video {
   position: fixed;
@@ -49,7 +49,7 @@
   z-index: 1;
   opacity: 0;
   animation: fadeInOut 0.5s ease-in forwards;
-  animation-delay: 7.7s;
+  animation-delay: 7s;
 }
 .container .frame .riizeImg img {
   width: 100%;

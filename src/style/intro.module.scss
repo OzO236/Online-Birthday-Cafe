@@ -286,6 +286,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-weight: 700;
+        color: #fff;
+        animation: colorChange 1s linear infinite;
       }
     }
   }
@@ -297,5 +300,14 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes colorChange {
+  from{
+    color: black;
+  }
+  to{
+    color: rgb(234, 170, 86);
   }
 }
