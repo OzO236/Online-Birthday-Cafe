@@ -36,14 +36,14 @@
 .container .paper .bigBox .title {
   font-family: "Anthony";
   position: absolute;
-  top: 56px;
+  top: 100px;
   left: 58px;
-  font-size: 24px;
+  font-size: 18px;
 }
 .container .paper .bigBox .p1 {
   font-family: "Noto Sans KR-Regular";
   position: absolute;
-  top: 134px;
+  top: 130px;
   left: 60px;
   font-size: 10px;
 }
